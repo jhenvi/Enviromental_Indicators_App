@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    
+    <title>Policies</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    </head>
+
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Current Policy Projections</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto flex-nowrap">
+                  <li class="nav-item active">
+                      <span><a class="nav-link active" href="#"></a></span>
+                  </li>
+                  <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Navigate
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="/"> Home </a>
+                              <a class="dropdown-item" href="/country">Results by Country</a>
+                              <a class="dropdown-item" href="/temperature">Global Mean Temperature Increase</a>
+                              <a class="dropdown-item" href="/policy_projections">Policy Projections</a>
+                              <a class="dropdown-item" href="/insights">Related Videos</a>
+                              <a class="dropdown-item" href="/articles">Current Articles</a>
+                          </div>
+                      </li>
+                <li class="nav-item">
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero-image"></div>
+
+    <div class="container">
+            <div class="row">
+              <h1> Current Policies</h1>
+          <div class="table-responsive"> 
+              <div class="row">
+                  <div class="col-md-12">
+                  <div class= "iframe-container" -->
+                    <!-- <h1>Simple Table Search</h1> -->
+                    <input type="search" id="search"  onkeyup="myFunction()" placeholder="Filter by Country">
+                    <table id="myTable" border="1" class="dataframe table table-striped table-hover">
+                      <thead>
+                        <tr style="text-align: justify;">
+                          <th>Country</th>
+                          <th>Sector</th>
+                          <th>Name of Indicator</th>
+                          <th>Definition</th>
+                          <th>Unit</th>
+                          <th>References</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Oil and Gas</td>
+                          <td>Oil and Gas activity</td>
+                          <td>Oil and Gas Production</td>
+                          <td>Mtoe</td>
+                          <td>Ministry of Energy and Mining of Argentina (20...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Electricity</td>
+                          <td>Electricity activity</td>
+                          <td>Electricity demand per capita</td>
+                          <td>kWh / cap</td>
+                          <td>Ministry of Energy and Mining of Argentina (20...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Electricity</td>
+                          <td>Electricity emissions intensity</td>
+                          <td>CO2 emissions per unit electricity produced</td>
+                          <td>gCO2 / kWh</td>
+                          <td>Climate Action Tracker (2017). Argentina.  Lin...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Electricity</td>
+                          <td>Electricity renewable intensity</td>
+                          <td>Renewables in electricity generation</td>
+                          <td>% renewables</td>
+                          <td>Ministry of Energy and Mining of Argentina (20...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Electricity</td>
+                          <td>Renewable energy generation (index)</td>
+                          <td>Renewable energy generation (indexed to base y...</td>
+                          <td>1990 value normalised to 1</td>
+                          <td>Climate Action Tracker (2017). Argentina.  Lin...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Transport: Road</td>
+                          <td>EVs per capita</td>
+                          <td>Amount of EVs per 1000 capita</td>
+                          <td>EVs / 1000 cap</td>
+                          <td>Ministry of Energy and Mining of Argentina (20...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Forestry</td>
+                          <td>Forestry activity</td>
+                          <td>Forest area (indexed to base year)</td>
+                          <td>ha of forest (indexed to 1990)</td>
+                          <td>Climate Action Tracker (2016). Argentina.  Lin...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Agriculture</td>
+                          <td>Agriculture activity (meat): consumption</td>
+                          <td>Meat calorie consumption per capita</td>
+                          <td>meat kcal / cap / day</td>
+                          <td>OECD 2016, OECD-FAO Agricultural Outlook 2017-...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Agriculture</td>
+                          <td>Agriculture activity (meat): production</td>
+                          <td>Meat production per capita</td>
+                          <td>meat kg / cap / day</td>
+                          <td>OECD 2016, OECD-FAO Agricultural Outlook 2017-...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Waste</td>
+                          <td>Waste activity</td>
+                          <td>Amount of waste per capita</td>
+                          <td>t waste / cap</td>
+                          <td>Ministry of Environment and Sustainable Develo...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Macro</td>
+                          <td>Emissions per capita</td>
+                          <td>GHG emissions per capita</td>
+                          <td>tCO2e / cap</td>
+                          <td>Climate Action Tracker (2018). Argentina.  Lin...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Macro</td>
+                          <td>GDP per capita</td>
+                          <td>GDP per capita</td>
+                          <td>thousand USD2012 (PPP) / cap</td>
+                          <td>WorldBank (2016). Historic GDP. Available at: ...</td>
+                        </tr>
+                        <tr>
+                          <td>Argentina</td>
+                          <td>Macro</td>
+                          <td>Emissions intensity of GDP</td>
+                          <td>GHG emissions per GDP</td>
+                          <td>tCO2e / thsd. USD2012 (PPP)</td>
+                          <td>Climate Action Tracker (2018). Argentina.  Lin...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Industry: Cement</td>
+                          <td>Cement activity</td>
+                          <td>Amount of cement produced per capita</td>
+                          <td>t product / cap</td>
+                          <td>Cement production:\r\nEmpresa de Pesquisa Ener...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Industry: Cement</td>
+                          <td>Cement emissions intensity</td>
+                          <td>CO2 emissions per unit cement produced</td>
+                          <td>kg CO2 / t product</td>
+                          <td>Cement production:\r\nEmpresa de Pesquisa Ener...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Industry: Steel</td>
+                          <td>Steel activity</td>
+                          <td>Amount of steel produced per capita</td>
+                          <td>t product / cap</td>
+                          <td>Steel production:\r\nEmpresa de Pesquisa Energ...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Electricity</td>
+                          <td>Electricity activity</td>
+                          <td>Electricity demand per capita</td>
+                          <td>kWh / cap</td>
+                          <td>Min:\r\nMinistry of Science, Technology, Innov...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Electricity</td>
+                          <td>Electricity emissions intensity</td>
+                          <td>CO2 emissions per unit electricity produced</td>
+                          <td>gCO2 / kWh</td>
+                          <td>Min:\r\nInternational Energy Agency - IEA (201...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Electricity</td>
+                          <td>Electricity renewable intensity</td>
+                          <td>Renewables in electricity generation</td>
+                          <td>% renewables</td>
+                          <td>Min:\r\nMinistry of Science, Technology, Innov...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Electricity</td>
+                          <td>Renewable energy generation (index)</td>
+                          <td>Renewable energy generation (indexed to base y...</td>
+                          <td>1990 value normalised to 1</td>
+                          <td>Min:\r\nMinistry of Science, Technology, Innov...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Transport: Road</td>
+                          <td>Modal split</td>
+                          <td>Modal split</td>
+                          <td>% private cars and motorcycles</td>
+                          <td>Global Transportation Roadmap Model, August 20...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Transport: Road</td>
+                          <td>Road transport emissions intensity</td>
+                          <td>CO2 emission per vehicle kilometre</td>
+                          <td>kg CO2 / vkm</td>
+                          <td>Global Transportation Roadmap Model, August 20...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Transport: Road</td>
+                          <td>Road transport biofuel/electrification</td>
+                          <td>Biofuels and electrification in road transport</td>
+                          <td>% biofuels/elec.</td>
+                          <td>Energy research company - EPE (2015). Energy D...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Transport: Road</td>
+                          <td>EVs per capita</td>
+                          <td>Amount of EVs per 1000 capita</td>
+                          <td>EVs / 1000 cap</td>
+                          <td>Energy research company - EPE (2015). Energy D...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Buildings</td>
+                          <td>Buildings activity (residential)</td>
+                          <td>Residential building area per capita</td>
+                          <td>m� / cap</td>
+                          <td>International Energy Agency - IEA (2013). Tran...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Buildings</td>
+                          <td>Buildings activity (commercial)</td>
+                          <td>Commercial building area per capita</td>
+                          <td>m� / cap</td>
+                          <td>International Energy Agency - IEA (2013). Tran...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Buildings</td>
+                          <td>Buildings emissions intensity (per capita)</td>
+                          <td>Total building CO2 emissions per capita</td>
+                          <td>t CO2 / cap</td>
+                          <td>Emissions:\r\nMinistry of Science, Technology,...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Forestry</td>
+                          <td>Forestry activity</td>
+                          <td>Forest area (indexed to base year)</td>
+                          <td>ha of forest (indexed to 1990)</td>
+                          <td>Massachusetts Institute of Technology - MIT (2...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Agriculture</td>
+                          <td>Agriculture activity (meat): consumption</td>
+                          <td>Meat calorie consumption per capita</td>
+                          <td>meat kcal / cap / day</td>
+                          <td>Meat Consumption: \r\nOECD-FAO (2017). Agricul...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Agriculture</td>
+                          <td>Agriculture activity (total): consumption</td>
+                          <td>Total calorie consumption per capita</td>
+                          <td>kcal / cap / day</td>
+                          <td>Food and Agriculture Organization - FAO (2012)...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Agriculture</td>
+                          <td>Agriculture activity (meat): production</td>
+                          <td>Meat production per capita</td>
+                          <td>meat kg / cap / day</td>
+                          <td>Meat Consumption: \r\nOECD-FAO (2017). Agricul...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Waste</td>
+                          <td>Waste activity</td>
+                          <td>Amount of waste per capita</td>
+                          <td>t waste / cap</td>
+                          <td>Min: \r\nMinistry of Science, Technology, Inno...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Emissions per capita</td>
+                          <td>GHG emissions per capita</td>
+                          <td>tCO2e / cap</td>
+                          <td>Emissions: \r\nClimate Action Tracker (2018). ...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Primary energy demand per capita</td>
+                          <td>Primary energy demand per capita</td>
+                          <td>GJ (primary) / cap</td>
+                          <td>Energy: \r\nInternational Energy Agency - IEA ...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Final energy demand per capita</td>
+                          <td>Final energy demand per capita</td>
+                          <td>GJ (final) / cap</td>
+                          <td>Energy: \r\nInternational Energy Agency - IEA ...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>GDP per capita</td>
+                          <td>GDP per capita</td>
+                          <td>thousand USD2012 (PPP) / cap</td>
+                          <td>GDP:\r\nWorld Bank, World Development Indicato...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Emissions intensity of GDP</td>
+                          <td>GHG emissions per GDP</td>
+                          <td>tCO2e / thsd. USD2012 (PPP)</td>
+                          <td>Emissions:\r\nClimate Action Tracker (2018). B...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Primary energy intensity of GDP</td>
+                          <td>Primary energy demand per GDP</td>
+                          <td>TJ (primary) / mln. USD2012 (PPP)</td>
+                          <td>Primary Energy Demand:\r\nInternational Energy...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Final energy intensity of GDP</td>
+                          <td>Final energy demand per GDP</td>
+                          <td>TJ (final) / mln. USD2012 (PPP)</td>
+                          <td>Final Energy Demand:\r\nInternational Energy A...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Emissions intensity of energy</td>
+                          <td>Energy-related CO2 emissions per unit primary ...</td>
+                          <td>tCO2 / TJ (primary)</td>
+                          <td>Emissions:\r\nClimate Action Tracker (2018). B...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Fossil fuel share</td>
+                          <td>Fossil fuels in primary energy demand</td>
+                          <td>% fossil fuels</td>
+                          <td>Min:\r\nMinistry of Science, Technology, Innov...</td>
+                        </tr>
+                        <tr>
+                          <td>Brazil</td>
+                          <td>Macro</td>
+                          <td>Coal share</td>
+                          <td>Coal in primary energy demand</td>
+                          <td>% coal</td>
+                          <td>Min:\r\nInternational Energy Agency - IEA (201...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Oil and Gas</td>
+                          <td>Oil and Gas emissions intensity</td>
+                          <td>GHG emissions per unit of oil and gas produced</td>
+                          <td>tCO2e / ktoe</td>
+                          <td>GHG emissions from oil and gas production:\r\n...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Oil and Gas</td>
+                          <td>Oil and Gas activity</td>
+                          <td>Oil and Gas Production</td>
+                          <td>Mtoe</td>
+                          <td>\r\nOil and gas production:\r\nEnvironment and...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Electricity</td>
+                          <td>Electricity activity</td>
+                          <td>Electricity demand per capita</td>
+                          <td>kWh / cap</td>
+                          <td>Electricity demand:\r\nEnvironment and Climate...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Electricity</td>
+                          <td>Electricity emissions intensity</td>
+                          <td>CO2 emissions per unit electricity produced</td>
+                          <td>gCO2 / kWh</td>
+                          <td>CO2 emissions from electricity:\r\nEnvironment...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Electricity</td>
+                          <td>Electricity renewable intensity</td>
+                          <td>Renewables in electricity generation</td>
+                          <td>% renewables</td>
+                          <td>Electricity generation:\r\nSecond Biennial Rep...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Electricity</td>
+                          <td>Renewable energy generation (index)</td>
+                          <td>Renewable energy generation (indexed to base y...</td>
+                          <td>1990 value normalised to 1</td>
+                          <td>Electricity generation:\r\nSecond Biennial Rep...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Transport: Road</td>
+                          <td>Modal split</td>
+                          <td>Modal split</td>
+                          <td>% private cars and motorcycles</td>
+                          <td>ICCT Global Transportation Roadmap Model, Augu...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Transport: Road</td>
+                          <td>Road transport emissions intensity</td>
+                          <td>CO2 emission per vehicle kilometre</td>
+                          <td>kg CO2 / vkm</td>
+                          <td>ICCT Global Transportation Roadmap Model, Augu...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Transport: Aviation</td>
+                          <td>Aviation activity</td>
+                          <td>Passenger flux per capita</td>
+                          <td>pkm / cap</td>
+                          <td>Aviation activity\r\nICCT Global Transportatio...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Buildings</td>
+                          <td>Buildings activity (commercial)</td>
+                          <td>Commercial building area per capita</td>
+                          <td>m� / cap</td>
+                          <td>Commercial building area:\r\nEnvironment and C...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Buildings</td>
+                          <td>Buildings emissions intensity (commercial)</td>
+                          <td>CO2 emissions per commercial building area</td>
+                          <td>kg CO2 / m�</td>
+                          <td>Commercial sector CO2 emissions:\r\nEnvironmen...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Buildings</td>
+                          <td>Buildings emissions intensity (per capita)</td>
+                          <td>Total building CO2 emissions per capita</td>
+                          <td>t CO2 / cap</td>
+                          <td>Buildings emissions:\r\nEnvironment and Climat...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Forestry</td>
+                          <td>Forestry activity</td>
+                          <td>Forest area (indexed to base year)</td>
+                          <td>ha of forest (indexed to 1990)</td>
+                          <td>Forest area:\r\nHistorical values and outlook ...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Agriculture</td>
+                          <td>Agriculture activity (meat): consumption</td>
+                          <td>Meat calorie consumption per capita</td>
+                          <td>meat kcal / cap / day</td>
+                          <td>Meat consumption:\r\nOECD-FAO (2017), Link: \r...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Agriculture</td>
+                          <td>Agriculture activity (meat): production</td>
+                          <td>Meat production per capita</td>
+                          <td>meat kg / cap / day</td>
+                          <td>Meat production:\r\nOECD-FAO (2017), Link: htt...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Emissions per capita</td>
+                          <td>GHG emissions per capita</td>
+                          <td>tCO2e / cap</td>
+                          <td>Emissions:\r\nCAT calculations based on Enviro...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Primary energy demand per capita</td>
+                          <td>Primary energy demand per capita</td>
+                          <td>GJ (primary) / cap</td>
+                          <td>Primary energy demand: \r\nCanada's Energy Fut...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Final energy demand per capita</td>
+                          <td>Final energy demand per capita</td>
+                          <td>GJ (final) / cap</td>
+                          <td>Final energy demand: \r\nCanada's Energy Futur...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>GDP per capita</td>
+                          <td>GDP per capita</td>
+                          <td>thousand USD2012 (PPP) / cap</td>
+                          <td>GDP:\r\nHistorical data from World Bank (2017)...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Emissions intensity of GDP</td>
+                          <td>GHG emissions per GDP</td>
+                          <td>tCO2e / thsd. USD2012 (PPP)</td>
+                          <td>Emissions:\r\nCAT calculations based on Enviro...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Primary energy intensity of GDP</td>
+                          <td>Primary energy demand per GDP</td>
+                          <td>TJ (primary) / mln. USD2012 (PPP)</td>
+                          <td>Primary energy demand: \r\nCanada's Energy Fut...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Final energy intensity of GDP</td>
+                          <td>Final energy demand per GDP</td>
+                          <td>TJ (final) / mln. USD2012 (PPP)</td>
+                          <td>Final energy demand: \r\nCanada's Energy Futur...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Emissions intensity of energy</td>
+                          <td>Energy-related CO2 emissions per unit primary ...</td>
+                          <td>tCO2 / TJ (primary)</td>
+                          <td>Energy-related CO2 emissions\r\nIEA projection...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Fossil fuel share</td>
+                          <td>Fossil fuels in primary energy demand</td>
+                          <td>% fossil fuels</td>
+                          <td>Fossil fuels share:\r\nCanada's Energy Future ...</td>
+                        </tr>
+                        <tr>
+                          <td>Canada</td>
+                          <td>Macro</td>
+                          <td>Coal share</td>
+                          <td>Coal in primary energy demand</td>
+                          <td>% coal</td>
+                          <td>Coal share:\r\nCanada's Energy Future (2017): ...</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+
+
+                </div>
+                </div>
+             </div>
+          </div>
+
+        <footer class="page-footer font-small blue">
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a> Data BootCamp Final Project</a>
+            </div>
+        </footer>
+        <script>
+          function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("search");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+              td = tr[i].getElementsByTagName("td")[0];
+              if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                  tr[i].style.display = "";
+                } else {
+                  tr[i].style.display = "none";
+                }
+              }
+            }
+          }
+          </script>
+</body>
+
+</html>
