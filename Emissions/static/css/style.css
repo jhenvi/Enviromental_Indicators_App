@@ -99,7 +99,7 @@ footer {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: #777;
 }
 
 body {
@@ -159,12 +159,12 @@ input {
  tbody tr:nth-child(even){
     background:#ECF0F1;
   }
-  
+
   tbody tr:hover{
   background:#BDC3C7;
     color:#FFFFFF;
   }
-  
+
   .fixed{
     top:0;
     position:fixed;
@@ -172,11 +172,11 @@ input {
     display:none;
     border:none;
   }
-  
+
   .scrollMore{
     margin-top:600px;
   }
-  
+
   .up{
     cursor:pointer;
   }
@@ -188,8 +188,6 @@ input {
   #table-area th:nth-child(6) {
   min-width: 70px;
 }
-
-  
   td:nth-child(1) { background: hsl(150, 50%, 95%); vertical-align: inherit}
   td:nth-child(2) { background: hsl(160, 60%, 95%); vertical-align: inherit}
   td:nth-child(3) { background: hsl(170, 70%, 95%); vertical-align: inherit}
@@ -230,12 +228,9 @@ input {
   th:nth-child(17) { background: hsl(200, 99%, 50%); vertical-align: inherit}
   th:nth-child(18) { background: hsl(200, 99%, 50%); vertical-align: inherit}
   th:nth-child(19) { background: hsl(150, 50%, 50%); vertical-align: inherit}
-  th:nth-child(20) { background: hsl(160, 60%, 50%); vertical-align: inherit}{
+  th:nth-child(20) { background: hsl(160, 60%, 50%); vertical-align: inherit}
 
-    min-width: 70px;
-  }
-  
-  .loader {
+ .loader {
     margin-top: 50px;
   }
 
@@ -245,6 +240,7 @@ body {
   margin: 0;
 }
 
+/* set map, body, and html to 100% of the screen size */
 /* set map, body, and html to 100% of the screen size */
 #map,
 body,
@@ -284,15 +280,6 @@ html {
     top: 10px;
     right: 10px;
   }
-  /*123 The footer is positioned at the bottom of the page */
-.footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  min-height: 100px;
-  background: #4e5d6c;
-}
 /* 123The code styles the text at the bottom of the footer */
 .footer > .bottom {
   position: absolute;
@@ -440,4 +427,17 @@ select {
     opacity: 1;
   }
 }
-s
+
+iframe {
+
+align-items: middle
+}
+container{
+
+align-content: middle
+}
+
+.video {
+
+  align-items: middle
+}

@@ -7,22 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Welcome!</title>
-
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="../static/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- Leaflet JS & CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" 
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="crossorigin=""></script>
 
-    <!-- D3 -->
-    <script src="https://d3js.org/d3.v5.min.js"></script>
-
-    <!-- Leaflet JS & CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" 
-    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
-
-    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
-    crossorigin=""></script>
 </head>
 <body>
 
@@ -42,12 +43,13 @@
                         Navigate
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/"> Home </a>
-                            <a class="dropdown-item" href="/country">Results by Country</a>
-                            <a class="dropdown-item" href="/temperature">Global Mean Temperature Increase</a>
-                            <a class="dropdown-item" href="/policy_projections">Policy Projections</a>
-                            <a class="dropdown-item" href="/insights">Related Videos</a>
-                            <a class="dropdown-item" href="/articles">Current Articles</a>
+                          <a class="dropdown-item" href="/"> Home </a>
+                          <a class="dropdown-item" href="/country">Results by Country</a>
+                          <a class="dropdown-item" href="/temperature">Global Temperature Tracker</a>
+                          <a class="dropdown-item" href="/policy_projections">Policy Commitments</a>
+                          <a class="dropdown-item" href="/stats">Country Data</a>
+                          <a class="dropdown-item" href="/insights">Related Videos</a>
+                          <a class="dropdown-item" href="/articles">Current Articles</a>
                         </div>
                     </li>
                <li class="nav-item">
@@ -57,13 +59,19 @@
             </ul>
         </div>
     </nav>
-            <div class="hero-image"></div>
+
+
+<div class="hero-image"></div>
+<div class="video">
 <div class="container">
-  <div class="row">
-  <div class="col-md-12"> 
+  <div class="row text-center"></div>
+  <div class="col-md-12" > 
   <h1>How Are We Doing Globally?</h1>
-  </div>
-<div class="row">
+  <iframe width="960" height="415" src="https://www.youtube.com/embed/uSMJwkkPQtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p> See Stats page for more graphical information</p>
+</div>
+</div>
+  <div class="row">
     <div class="col-md-12">
       <!-- <div class="panel panel-primary"> -->
         <!-- <div class="panel-body"> -->
@@ -71,8 +79,9 @@
                 <div class="jumbotron">
                   <section class= "posts">
                     <article class="post">
+                      <!-- <button>Hide Text</button> -->
                       <h3>The Paris Agreement (French: Le Accord de Paris)</h3>
-                      <p>The Paris Agreement (French: Le Accord de Paris) is an agreement within the United Nations Framework Convention on Climate Change (UNFCCC), dealing 
+                      <p class="this">The Paris Agreement (French: Le Accord de Paris) is an agreement within the United Nations Framework Convention on Climate Change (UNFCCC), dealing 
                       with greenhouse-gas-emissions mitigation, adaptation, and finance, signed in 2016. The agreement's language was negotiated by representatives of 196 state 
                       parties at the 21st Conference of the Parties of the UNFCCC in Le Bourget, near Paris, France, and adopted by consensus on 12 December 2015. As of February 2020, 
                       all UNFCCC members have signed the agreement, 189 have become party to it, and the only significant emitters which are not parties are Iran and Turkey.
@@ -85,11 +94,14 @@
                       date of withdrawal for the U.S. is November 2020, shortly before the end of President Trump's 2016 term. In practice, changes in United States policy that are 
                       contrary to the Paris Agreement have already been put in place.</p>
                       <h3>G20 Paris Agreement Tool & Analysis</h3>
-                    <p>The focus of this tool is to report environmental indicators for the G20 countries and its respective policies, temperature changes due to environmental impact. The dashboard tracks the emissions trends of 13 economic sectors through data series of 41 indicators for the G20 countries.</p>
-                    <h3> Where are we? and Where do we want to go?.</h3>
-                    <p>We are focusing on the G20 members as they account for 85 per cent of the world economy, 75 per cent of global trade, and two-thirds of the world's population, 
+                      <p class="this">The focus of this tool is to report environmental indicators for the G20 countries and its respective policies, temperature changes due to environmental impact. The dashboard tracks the emissions trends of 13 economic sectors through data series of 41 indicators for the G20 countries.</p>
+                      <h3> Where are we? and Where do we want to go?.</h3>
+                     <p class="this">We are focusing on the G20 members as they account for 85 per cent of the world economy, 75 per cent of global trade, and two-thirds of the world's population, 
                       including more than half of the world's poor. </p>
-                    <p>According to United Nations Environment Programme UNEP<link>, if we rely only on the current climate commitments of the Paris Agreement, temperatures 
+                      <p class="this">The Group of Twenty, or the G20, is the premier forum for international economic cooperation. The G20 brings together the leaders of both developed and developing countries from every continent. ​
+
+                        Collectively, G20 members represent around 80% of the world’s economic output, two-thirds of global population and three-quarters of international trade. Throughout the year, representatives from G20 countries gather to discuss financial and socioeconomic issues.​</p>
+                      <p class="this">According to United Nations Environment Programme UNEP<link>, if we rely only on the current climate commitments of the Paris Agreement, temperatures 
                       will likely rise to 3.2 °C this century. To limit global temperature, rise to 1.5 °C, emissions must be below 25 gigatons (Gt) by 2030. With current Nov 
                       2019 commitments, emissions will be 56 Gt CO2e by 2030, twice the environmental target. To limit global temperature rise to 1.5 °C, the global annual emission 
                       reduction needed is 7.6% emissions reduction every year between 2020 and 2030. The top four emitters (China, USA, EU27, and India) contribute to over 55% of the 
@@ -181,10 +193,10 @@
                 <button id="homebutton">Show </button>
             </div>
         </div>
-        <!-- <div>
+        <div>
         <hr>
         <button id= "showworldmap"> show World Map</button>
-        </div> -->
+        </div>
 
         <div class="row"> 
                 <div id="map"></div> 
@@ -196,47 +208,40 @@
             </div>
         </div>
 
-                <div id="scatter"></div>
-                <!-- <div id="bar"></div> -->
-    
-</div>  
+  <div id="scatter"></div>
+  <!-- <div id="bar"></div> -->
+
+</div>
+<div class="container">
+
+
+<div class="row">
+  <div class="col-md-12">
     <div class="container">
-
-
-      <div class="row">
-        <div class="col-md-12">
-        <div class="container">
         
-            <section class= "posts">
-              <article class="post">
-                
+      <section class= "posts">
+       <article class="post">
                 <ul> 
                 <h6>References</h6>
                 <li><a href="https://en.wikipedia.org/wiki/Paris_Agreement"> Paris Agreement </a></li>
                 <li><a href="https://public.wmo.int/en"> World Bank Environmental Data </a></li>
                 <li><a href="https://climateactiontracker.org"> Climate Change Action Tracker</a></li>
-                  </article>
-          </section>
+                <li><a href="https://climate.nasa.gov/"> Climate Nasa</a></li>
+                </ul>
+         </article>
+       </section>
+       </div>
+    </div>
+  </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+        <footer class="page-footer font-small blue">
+          <div class="footer-copyright text-center py-3">© Data BootCamp Final Project:
+            <a> Climate Change Tracker</a>
           </div>
-        </div>
-      </div>
-
-
-    <footer class="page-footer font-small blue">
-        <div class="footer-copyright text-center py-3">
-          <a> DataBootCamp Final Project</a>
-        </div>
-    </footer>
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="{{ url_for('static', filename='js/config.js') }}"></script>
-<script src="{{ url_for('static', filename='js/app.js') }}"></script>
-
+      </footer>
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>  
 </body>
 
 </html>

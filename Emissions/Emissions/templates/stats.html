@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Environmental Indicators</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/style.css">
+
+    <!-- D3 -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Leaflet JS & CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Climate Change is Real</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item active">
+                    <span><a class="nav-link active" href="#">Home</a></span>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Navigate
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/"> Home </a>
+                          <a class="dropdown-item" href="/country">Results by Country</a>
+                          <a class="dropdown-item" href="/temperature">Global Temperature Tracker</a>
+                          <a class="dropdown-item" href="/policy_projections">G20 Policy Commitments</a>
+                          <a class="dropdown-item" href="/stats">Country Data</a>
+                          <a class="dropdown-item" href="/insights">Related Videos</a>
+                          <a class="dropdown-item" href="/articles">Current Articles</a>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+<div class="hero-image"></div>
+
+  <div class="container-fluid"><h1 style="text-align:center;">Environmental Indicators</h1></div>
+  
+
+        <div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+          <h1>G20 Countries  <img id="flag" width="30" height="30" src="../static/images/g20.jpg" alt="flag1"></h1>
+          <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+          <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+          <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+        </div>
+  </div>
+</div>
+
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Argentina  <img id="flag" width="30" height="30" src="../static/images/flag-of-Argentina.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+   <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Australia <img id="flag" width="30" height="30" src="../static/images/flag-of-Australia.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Brazil <img id="flag" width="30" height="30" src="../static/images/flag-of-Brazil.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Canada <img id="flag" width="30" height="30" src="../static/images/flag-of-Canada.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>China <img id="flag" width="30" height="30" src="../static/images/flag-of-China.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>France <img id="flag" width="30" height="30" src="../static/images/flag-of-France.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Germany <img id="flag" width="30" height="30" src="../static/images/flag-of-Germany.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>India <img id="flag" width="30" height="30" src="../static/images/flag-of-India.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Indonesia <img id="flag" width="30" height="30" src="../static/images/flag-of-Indonesia.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Italy <img id="flag" width="30" height="30" src="../static/images/flag-of-Italy.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Japan <img id="flag" width="30" height="30" src="../static/images/flag-of-Japan.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Republic of Korea <img id="flag" width="30" height="30" src="../static/images/flag-of-Korea-South.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Mexico <img id="flag" width="30" height="30" src="../static/images/flag-of-Mexico.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Russia <img id="flag" width="30" height="30" src="../static/images/flag-of-Russia.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Saudi Arabia <img id="flag" width="30" height="30" src="../static/images/flag-of-Saudi-Arabia.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>South Africa <img id="flag" width="30" height="30" src="../static/images/flag-of-South-Africa.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>Turkey <img id="flag" width="30" height="30" src="../static/images/flag-of-Turkey.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>United Kingdom <img id="flag" width="30" height="30" src="../static/images/flag-of-United-Kingdom.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>United States <img id="flag" width="30" height="30" src="../static/images/flag-of-United-States-of-America.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+</div>
+<div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+  <h1>European Union <img id="flag" width="30" height="30" src="../static/images/Europe.png" alt="flag1"></h1>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+  <div class="col-sm-12" style="background-color:white;">.col-sm-12</div>
+</div>
+
+</div>
+
+
+    <div class="row">
+        <div class="col-md-12" id="countrygraph">
+        <div id="scatter"></div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="../static/js/stats.js"></script>
+</div>
+    <section>
+    <ul>
+      <h6>Data Sources</h6>
+      <li><a href="https://en.wikipedia.org/wiki/Paris_Agreement"> Paris Agreement </a></li>
+      <li><a href="https://public.wmo.int/en"> World Bank Environmental Data </a></li>
+      <li><a href="https://climateactiontracker.org"> Climate Change Action Tracker</a></li>
+      <li><a href="https://climate.nasa.gov/"> Climate Nasa</a></li>
+    </article>
+    </section>
+    <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-3">© Data BootCamp Final Project:
+        <a> Climate Change Tracker</a>
+      </div>
+  </footer>
+
+
+
+</body>
+
+</html>
