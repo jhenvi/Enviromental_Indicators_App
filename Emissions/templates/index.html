@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
 <head>
 
   <meta charset="UTF-8">
@@ -67,10 +68,11 @@
   <div class="row text-center"></div>
   <div class="col-md-12" > 
   <h1>How Are We Doing Globally?</h1>
-  <iframe width="960" height="415" src="https://www.youtube.com/embed/uSMJwkkPQtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <p> See Stats page for more graphical information</p>
+  <iframe width="860" height="415" src="https://www.youtube.com/embed/uSMJwkkPQtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <p> </p> -->
 </div>
 </div>
+<body>
   <div class="row">
     <div class="col-md-12">
       <!-- <div class="panel panel-primary"> -->
@@ -153,19 +155,9 @@
         </div>
       </div>
     </div>
+    </table>
 
-    <div class="container">
-      <div class="col-md-12">
-        <table id="geolocation" class="table table-striped table-inverse">
-          <h3>Interactive Map</h3>
-          <thead>
-            <tr>
-            </tr>
-          </thead>
-        </table>
-
-<body>
-
+<!-- <body> -->
   <div class="container">
     <div class="row">
         <div class="col-md-12"> 
@@ -195,11 +187,6 @@
         </div>
         <div>
         <hr>
-        <button id= "showworldmap"> show World Map</button>
-        </div>
-
-        <div class="row"> 
-                <div id="map"></div> 
         </div>
 
         <div class="row">
@@ -214,11 +201,10 @@
 </div>
 <div class="container">
 
-
 <div class="row">
   <div class="col-md-12">
     <div class="container">
-        
+
       <section class= "posts">
        <article class="post">
                 <ul> 
@@ -241,7 +227,10 @@
           </div>
       </footer>
     <script src="{{ url_for('static', filename='js/config.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>  
+    <script src="{{ url_for('static', filename='js/config3.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/logic2.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    
 </body>
 
 </html>
