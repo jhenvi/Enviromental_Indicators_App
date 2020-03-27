@@ -1,35 +1,35 @@
 // creating colored world map
 
-var mapConfig = {
-  center: [43.28, 72.23],
-  zoom: 5
-}
-// const API_KEY = "pk.eyJ1IjoiamhlbnZpIiwiYSI6ImNrNXg1MGI1NTFsd3kzZnJ6Nm1jbThqMm8ifQ.FHsSJ8kiRegzlZra9l3I8Q";
-var tileURL = "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}"
+// var mapConfig = {
+//   center: [43.28, 72.23],
+//   zoom: 5
+// }
+// // const API_KEY = "pk.eyJ1IjoiamhlbnZpIiwiYSI6ImNrNXg1MGI1NTFsd3kzZnJ6Nm1jbThqMm8ifQ.FHsSJ8kiRegzlZra9l3I8Q";
+// var tileURL = "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}"
 
-var tileConfig = {
-maxZoom: 13,
-id: "mapbox.streets",
-accessToken: API_KEY
-}
+// var tileConfig = {
+// maxZoom: 13,
+// id: "mapbox.streets",
+// accessToken: API_KEY
+// }
 
-var geoJSONurl = 'static/data/countries.geo.json'
+// var geoJSONurl = 'static/data/countries.geo.json'
 
-function colorChooser(countryname,emission) {
-  var max,min,emissionvalue=0;
-  for (i=0;i<emission.length;i++){
-    if (countryname==emission.country[i]){
-      max = Math.max(Number(emission.value))
-      min = Math.min(Number(emission.value))
-      emissionvalue = emission.value[i]
-      if (emissionvalue>=min && emissionvalue<(0.20*max)) {return "green"}
-      else if (emissionvalue>=(0.20*max) && emissionvalue<(0.40*max)) {return "blue"}
-      else if (emissionvalue>=(0.40*max) && emissionvalue<(0.60*max)) {return "yellow"}
-      else if (emissionvalue>=(0.60*max) && emissionvalue<(0.80*max)) {return "orange"}
-      else {return "red"}
-    }
-  }
-};
+// function colorChooser(countryname,emission) {
+//   var max,min,emissionvalue=0;
+//   for (i=0;i<emission.length;i++){
+//     if (countryname==emission.country[i]){
+//       max = Math.max(Number(emission.value))
+//       min = Math.min(Number(emission.value))
+//       emissionvalue = emission.value[i]
+//       if (emissionvalue>=min && emissionvalue<(0.20*max)) {return "green"}
+//       else if (emissionvalue>=(0.20*max) && emissionvalue<(0.40*max)) {return "blue"}
+//       else if (emissionvalue>=(0.40*max) && emissionvalue<(0.60*max)) {return "yellow"}
+//       else if (emissionvalue>=(0.60*max) && emissionvalue<(0.80*max)) {return "orange"}
+//       else {return "red"}
+//     }
+//   }
+// };
 
 
 function worldmap(emission){
@@ -494,3 +494,7 @@ function addin(tablerows){
     row.append("td").text(tablerows.unit)
     row.append("td").text(tablerows.reference)
 }
+
+
+
+

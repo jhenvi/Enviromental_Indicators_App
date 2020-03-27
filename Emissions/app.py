@@ -36,6 +36,31 @@ Base.prepare(engine, reflect=True)
 Emissions = Base.classes.raw_data4
 inspector.get_table_names()
 # bankdata = Base.classes.world_bank
+
+
+
+countries_locations = {"Brazil": [-14.2350, -51.9253],
+      "Germany": [51.1657, 10.4515],
+      "Italy": [41.8719, 12.5675],
+      "Argentina":[-38.4161, -63.6167],
+      "Australia": [-25.274398, 133.775136],
+      "United_Kingdom": [55.378051, -3.435973],
+      "France": [46.2276, 2.2137],
+      "EU": [54.526, 15.2551],
+      "Canada":[56.130366, -106.346771],
+      "China": [35.86166, 104.195397],
+      "Indonesia":[-0.789275, 113.921327],
+      "India":[20.593684, 78.96288],
+      "Japan": [36.204824,138.252924 ],
+      "Russia": [61.52401,105.318756],
+      "Saudi_Arabia": [23.885942, 45.079162 ],
+      "South_Africa":[-30.559482, 22.937506],
+      "Mexico": [23.634501,-102.552784 ],
+      "South_Korea": [35.907757, 127.766922 ],
+      "Turkey": [38.963745, 35.243322],
+      "United_States":[37.09, -95.71]
+      }
+
 #-----------------#
 # create route that renders index.html template
 @app.route("/")
@@ -65,6 +90,7 @@ def stats():
 @app.route("/worldmap")
 def worlmap():
     return render_template("/worldmap.html")
+
 # create route that renders data.html template
 @app.route("/data")
 def data():
@@ -130,7 +156,7 @@ def countrygraph(grabcountry,grabindicator):
 
     return jsonify(emission_data)
 
-# for the World graph on Home page 
+# for the World graph on Home page
 @app.route("/api/emission/World/<grabindicator>")
 def worldgraph(grabindicator):
     session = Session(engine)
@@ -162,52 +188,80 @@ def worldgraph(grabindicator):
     return jsonify(emission_data)
 
 # for the World Map on the Home page
+# @app.route("/api/emission/wholeworld/<grabyear>/<grabindicator>")
+# def worldmap (grabyear,grabindicator):
+#     session = Session(engine)
+#     results = session.query(Emissions.indicator, Emissions.unit,Emissions.country,Emissions.year,Emissions.value).\
+#         filter(grabyear == Emissions.year).\
+#         filter(grabindicator == Emissions.indicator).all()
+#     indicator=[]
+#     unit=[]
+#     country=[]
+#     year=[]
+#     value=[]
+#     for i in results:
+#         indicator.append(i[0])
+#         unit.append(i[1])
+#         country.append(i[2])
+#         year.append(i[3])
+#         value.append(i[4])
+
+
+#     emission_data = [{
+#         "indicator": indicator,
+#         "unit": unit,
+#         "country": country,
+#         "year": year,
+#         "value": value
+#     }]
+
+#     return jsonify(emission_data)
+
+# new code
+
 @app.route("/api/emission/wholeworld/<grabyear>/<grabindicator>")
 def worldmap (grabyear,grabindicator):
     session = Session(engine)
     results = session.query(Emissions.indicator, Emissions.unit,Emissions.country,Emissions.year,Emissions.value).\
         filter(grabyear == Emissions.year).\
         filter(grabindicator == Emissions.indicator).all()
-    indicator=[]
-    unit=[]
-    country=[]
-    year=[]
-    value=[]
+    emission_data=[]
+    print("after getting results")
+    print(results)
     for i in results:
-        indicator.append(i[0])
-        unit.append(i[1])
-        country.append(i[2])
-        year.append(i[3])
-        value.append(i[4])
+
+        emission_data.append({
+            "country":i[2],
+            "location":countries_locations.get(i[2]),
+            "value": i[4],
+            "unit":i[1]
+        })
+
+    emission_response = {
+        "indicator": results[0][0],
+        "year": results[0][3],
+        "emissionData": emission_data
+     }
+    
+
+    return jsonify(emission_response)
 
 
-    emission_data = [{
-        "indicator": indicator,
-        "unit": unit,
-        "country": country,
-        "year": year,
-        "value": value
-    }]
-
-    return jsonify(emission_data)
 
 @app.route("/api/news/<grabyear>/<grabcountry>")
 def news (grabyear,grabcountry):
-
-
-
 
     Country = grabcountry
     Before = grabyear
     url = f"https://www.google.co.in/search?q=+{Country}+co2+emissions+scholarly+articles+before:+{Before}"
     print (url)
     response = requests.get(url)
-    
+
     soup = b(response.text,"lxml")
-    
+
     articles=[]
     r = soup.find_all('div', attrs = {'class': 'BNeawe vvjwJb AP7Wnd'})
-    
+
     for i in range(len(r)):
         articles.append(r[i].text)
 
