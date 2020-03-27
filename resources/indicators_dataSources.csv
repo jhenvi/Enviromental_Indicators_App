@@ -1,0 +1,242 @@
+Sector,Name of Indicator,Indicator Description,Unit,Source Description,References
+Agriculture,Agriculture activity (meat): consumption,Meat calorie consumption per capita,meat kcal / cap / day,The historical data are obtained from FAOstat for all the countries.,"FAOstat. (2017). Data. Retrieved from http://www.fao.org/faostat/en/#data (accessed 12 January, 2018)
+
+United Nations, Department of Economic and Social Affairs, Population Division (2017). World Population Prospects: The 2017 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Agriculture,Agriculture activity (total): consumption,Total calorie consumption per capita,kcal / cap / day,The historical data are obtained from FAOstat for all the countries.,"FAOstat. (2017). Data. Retrieved from http://www.fao.org/faostat/en/#data (accessed 12 January, 2018)
+
+United Nations, Department of Economic and Social Affairs, Population Division (2017). World Population Prospects: The 2017 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Agriculture,Agriculture activity (meat): production,Meat production per capita,meat kg / cap / day,The historical data are obtained from FAOstat for all the countries.,"FAOstat. (2017). Data. Retrieved from http://www.fao.org/faostat/en/#data (accessed 12 January, 2018)
+
+United Nations, Department of Economic and Social Affairs, Population Division (2017). World Population Prospects: The 2017 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Agriculture,Agriculture emissions intensity (total),Tonnes of GHG emission per value added,tCO2e / thsd. USD2012 (PPP),"Historical data on agricultural emissions were obtained from the UNFCCC data query, and from the FAO if not reported in the UNFCCC database. The GDP data refer to WDI (The World Bank, 2015), calculated in USD2012 at PPP.","FAOstat. (2017). Data. Retrieved from http://www.fao.org/faostat/en/#data (accessed 12 January, 2018)
+
+United Nations, Department of Economic and Social Affairs, Population Division (2017). World Population Prospects: The 2017 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Buildings,Buildings activity (residential),Residential building area per capita,m� / cap,"Historical floor area data from Enerdata (for european countries) and IEA were divided by historical population data form the UN World Population Prospects (Enerdata, 2014; IEA; 2013; UN, 2017)","Enerdata. (2014). ODYSSEE Database. Retrieved from http://www.indicators.odyssee-mure.eu/energy-efficiency-database.html
+
+EU (2016) EU Buildings Stock Database. Retrieved from https://ec.europa.eu/energy/en/eu-buildings-database in August 2019
+
+IEA. (2013). Transition to Sustainable Buildings. Strategies and Opportunities to 2050. Retrieved from http://www.iea.org/publications/freepublications/publication/Building2013_free.pdf
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision. Medium Fertility Variant. Retrieved from: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Buildings,Buildings activity (commercial),Commercial building area per capita,m� / cap,"Historical floor area data from Enerdata (for european countries), the IEA and national studies is divided by historical population data from the UN World Population Prospects (UN, 2019).","Enerdata. (2014). ODYSSEE Database. Retrieved from http://www.indicators.odyssee-mure.eu/energy-efficiency-database.html
+
+EU (2016) EU Buildings Stock Database. Retrieved from https://ec.europa.eu/energy/en/eu-buildings-database in August 2019
+
+IEA. (2013). Transition to Sustainable Buildings. Strategies and Opportunities to 2050. Retrieved from http://www.iea.org/publications/freepublications/publication/Building2013_free.pdf
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision. Medium Fertility Variant. Retrieved from: https://esa.un.org/unpd/wpp/Download/Standard/Population/
+
+EIA (2015) Commercial Buildings Energy Consumption Survey (CBECS). Retrieved from https://www.eia.gov/consumption/commercial/
+
+Satish Kumar, Neha Yadav, Mohini Singh & Sandeep Kachhawa (2018): Estimating India’s commercial building stock to address the energy data challenge, Building Research & Information, DOI: 10.1080/09613218.2018.1515304	
+
+Statistics Bureau of Japan (2016) Japan Statistical Yearbook, 2016, https://www.stat.go.jp/english/data/nenkan/65nenkan/1431-21.html
+
+EU / ODYSSEE (2016) EU Buildings Stock Database, https://ec.europa.eu/energy/en/eu-buildings-database
+
+"
+Buildings,Buildings emissions intensity (residential),CO2 emissions per residential building area,kg CO2 / m�,"Scope 1 and 2 emissions were included by using the category 'Emissions with electricity and heat allocated to consuming sectors' for both the residential and commercial sector from the IEA statistics (IEA, 2017). This was subsequently divided by floor area data from Enerdata and IEA  (Enerdata, 2014; IEA; 2013).","IEA. (2017). Based on IEA data from CO2 emissions from fuel combustion 2017 © OECD/IEA[2017], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker. 
+
+Enerdata. (2014). ODYSSEE Database. Retrieved from http://www.indicators.odyssee-mure.eu/energy-efficiency-database.html
+
+EU (2016) EU Buildings Stock Database. Retrieved from https://ec.europa.eu/energy/en/eu-buildings-database in August 2019
+
+IEA. (2013). Transition to Sustainable Buildings. Strategies and Opportunities to 2050. Retrieved from http://www.iea.org/publications/freepublications/publication/Building2013_free.pdf"
+Buildings,Buildings emissions intensity (commercial),CO2 emissions per commercial building area,kg CO2 / m²,"Scope 1 and 2 emissions were included by using the category 'Emissions with electricity and heat allocated to consuming sectors' for both the residential and commercial sector from IEA statistics (IEA, 2017). This was subsequently divided by floor area data from Enerdata (for europan countries), the IEA  (Enerdata, 2014; IEA, 2013), and several national studies. ","IEA. (2017). Based on IEA data from CO2 emissions from fuel combustion 2017 © OECD/IEA[2017], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker. 
+
+Enerdata. (2014). ODYSSEE Database. Retrieved from http://www.indicators.odyssee-mure.eu/energy-efficiency-database.html
+
+EU (2016) EU Buildings Stock Database. Retrieved from https://ec.europa.eu/energy/en/eu-buildings-database in August 2019
+
+IEA. (2013). Transition to Sustainable Buildings. Strategies and Opportunities to 2050. Retrieved from http://www.iea.org/publications/freepublications/publication/Building2013_free.pdf
+
+EIA (2015) Commercial Buildings Energy Consumption Survey (CBECS). Retrieved from https://www.eia.gov/consumption/commercial/
+
+Satish Kumar, Neha Yadav, Mohini Singh & Sandeep Kachhawa (2018): Estimating India’s commercial building stock to address the energy data challenge, Building Research & Information, DOI: 10.1080/09613218.2018.1515304	
+
+Statistics Bureau of Japan (2016) Japan Statistical Yearbook, 2016, https://www.stat.go.jp/english/data/nenkan/65nenkan/1431-21.html
+
+EU / ODYSSEE (2016) EU Buildings Stock Database, https://ec.europa.eu/energy/en/eu-buildings-database
+"
+Buildings,Buildings emissions intensity (per capita),Total building CO2 emissions per capita,t CO2 / cap,"Scope 1 and 2 emissions were included by using the category 'Emissions with electricity and heat allocated to consuming sectors' for both the residential and commercial sector from the IEA statistics (IEA, 2017). This was subsequently divided by the respective country populations from the UN World Population Prospects (UN, 2017).","IEA. (2017). Based on IEA data from CO2 emissions from fuel combustion 2017 © OECD/IEA[2017], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker. 
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision. Medium Fertility Variant. Retrieved from: https://esa.un.org/unpd/wpp/Download/Standard/Population/
+"
+Electricity,Electricity activity,Electricity demand per capita,kWh / cap,"For historical data on total power consumption, we used IEA data (IEA 2019). Population data were obtained from the UN Population Prospects 2019.","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Electricity,Electricity emissions intensity,CO2 emissions per unit electricity produced,gCO2 / kWh,"Historical values for this number were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data on CO2 emissions from fuel combustion 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Electricity,Electricity renewable intensity,Renewables in electricity generation,% renewables,"Historical values for this number were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Electricity,Renewable power generation (index),Renewable power generation (indexed to base year),1990 value normalised to 1,"Historical values for this number were calculated from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Electricity,Renewable capacity,Installed capacity of renewables,MW,"Historical values for this number were calculated from IEA data (IEA, 2019).","IRENA, 2019 International Renewable Energy Agency  "
+Forestry,Forestry activity,Forest area (indexed to base year),ha of forest (indexed to 1990),"The data used for our calculations are obtained from the World Bank's World Development Indicators (these coincide with the FAO database). Raw data from WDI are in square kilometres, which we indexed to the base year 1990. For Ethiopia, 1990-1993 values were extrapolated based on the 1993-2010 trend to correct for a trend break due to a change in total land area.",FAO / WDI (2016). World Development Indicators. Data retrieved through World Bank website (Last Updated: 12/12/2016)
+Industry: Cement,Cement activity,Amount of cement produced per capita,t product / cap,"Cement production activity was calculated by dividing domestic cement production by the national population. Cement production data  for Brazil, China, India, Indonesia, Japan, South Korea, Russia, Saudi Arabia, Turkey, USA and the World were taken from the USGS (USGS 2019), cement production data for Argentina, Australia, Canada, EU, Mexico, South Africa, France, Germany, Italy and the UK was collected from Cembureau (2018; 2019) and for Chile, Kazakhstan, New Zealand, Peru and Ukraine cement production data was collected from UN Data (2017). Production data for Japan for the period 1990-1997 were taken from Statistics Japan (2009). Else, all data before 2015 was collected from USGS (2012; 2016; 2017). National population data were obtained from the UN (UN, 2019). ","USGS, Cement (2019). Available at: https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/atoms/files/mcs-2019-cemen_0.pdf
+Statistics Japan (n.d). 8-9-i Production of Major Products - Production and Sales Value of Cement and Ceramic Products (1985-2003). Retrieved from http://www.stat.go.jp/data/chouki/zuhyou/08-09-i.xls
+
+Cembureau Avtivity Report (2018; 2019). Available at: https://cembureau.eu/media/1818/actvity-report-2018.pdf
+
+UN Data, cement production (2017). Available at: http://data.un.org/Data.aspx?d=ICS&f=cmID%3A37440-0
+
+UN,  World Population Prospects: The 2019 Revision (2019). Available at: https://population.un.org/wpp/
+
+USGS. (2012). 2012 Minerals Yearbook - Cement. Retrieved from http://minerals.usgs.gov/minerals/pubs/commodity/cement/
+
+USGS. (2016). Advance Data Release of the 2014 Annual tables.  Retrieved from http://minerals.er.usgs.gov/minerals/pubs/commodity/cement/myb1-2014-cemen-adv.xlsx
+
+USGS. (2017). Mineral Commodity Summaries. Retrieved retrieved from https://minerals.usgs.gov/minerals/pubs/commodity/cement/mcs-2017-cemen.pdf
+
+"
+Industry: Cement,Cement emissions intensity,CO2 emissions per unit cement produced,kg CO2 / t product,"The main source of this analysis was the Global Cement Database (WBCSD, 2017). This database provides intensities for different types of cement and related products. We used data on ""Weighted average net CO2 emission per tonne cementitious"". These data do not include emissions from electricity consumption, but the same database provides data on electricity consumption per tonne cement. To calculate scope 2 emissions, the electricity consumption per tonne of cement is combined with national average CO2 emission factors of electricity generation from IEA (IEA, 2018).The WBCSD data do not cover all cement installations in a country and data on countries with a low coverage have larger uncertainties. For example in India, 45% of the production is covered, in the USA and Brazil more than 70% and in the EU and Canada more than 90%. We have excluded the data for China, because only a few percent of the cement production is covered in the database. Cement production data were taken from the USGS (USGS, 2012; USGS, 2016; USGS, 2017; USGS, 2019). Production data for Japan for the period 1990-1997 were taken from Statistics Japan (2009).","Cembureau Avtivity Report (2018; 2019). Available at: https://cembureau.eu/media/1818/actvity-report-2018.pdf
+
+UN Data, cement production (2017). Available at: http://data.un.org/Data.aspx?d=ICS&f=cmID%3A37440-0
+
+UN,  World Population Prospects: The 2019 Revision (2019). Available at: https://population.un.org/wpp/
+
+WBCSD Cement Sustainability Initiative. (2017). Global Cement Database - GNR Project; 
+
+IEA, CO2 Emissions from fuel combustion (2018). Available at: https://www.iea.org/statistics/co2emissions/ 
+
+USGS. (2012). 2012 Minerals Yearbook - Cement. Retrieved from http://minerals.usgs.gov/minerals/pubs/commodity/cement/
+
+USGS. (2016). Advance Data Release of the 2014 Annual tables.  Retrieved from http://minerals.er.usgs.gov/minerals/pubs/commodity/cement/myb1-2014-cemen-adv.xlsx
+
+USGS. (2017). Mineral Commodity Summaries. Retrieved retrieved from https://minerals.usgs.gov/minerals/pubs/commodity/cement/mcs-2017-cemen.pdf
+
+WBCSD Cement Sustainability Initiative. (2017). Global Cement Database - GNR Project 
+
+Statistics Japan (2009). 8-9-i Production of Major Products - Production and Sales Value of Cement and Ceramic Products (1985-2003). Retrieved from http://www.stat.go.jp/data/chouki/zuhyou/08-09-i.xls"
+Industry: Chemicals and petrochemicals ,Chemicals and petrochemicals emissions intensity,CO2 emissions in chemical sector per added value,tCO2 / thsd. USD2012 (PPP),"For value added and for most countries World Bank data (World Bank, 2019) was used. The fraction of chemicals of total GVA of the manufacturing was multiplied by the total GVA of the manufacturing sector, which was obtained by combining the share of manufacturing in GDP (World Bank, 2019) with the total GDP (World Bank, 2019) (in PPP terms). 
+
+As process emissions from the chemical sector are significant, we only included countries for which both process and energy emission data were available. This is the case for Annex 1 countries only and data were derived from the UNFCCC (UNFCCC, 2019), where we used data on category 1AA2C. Other direct emissions were drawn from the 2018 IEA Balances (IEA, 2018). 
+We calculated scope 2 emissions by multiplying total electricity consumption in chemical and petrochemical sector from IEA energy balances (IEA, 2018) with national average CO2 emission factors of electricity generation from IEA CO2 emissions data (IEA, 2018). ","World Bank, World Development Indicators (2017). Available at: https://databank.worldbank.org/source/world-development-indicators#
+IEA, World Energy Balances (2018). Available at: https://www.iea.org/statistics/balances/
+
+"
+Industry: Chemicals and petrochemicals ,Coal share in chemical and petrochemicals industry,Share of coal in energy consumption,% coal,"The share of coal of total final energy consumption was calculated by dividing the national total final coal consumption in the chemical and petrochemical industry (IEA, 2019) by the total final energy consumption in the chemical and petrochemical industry (IEA, 2019).   ","IEA, World Energy Balances (2019). Available at: https://www.iea.org/statistics/balances/
+"
+Industry: Chemicals and petrochemicals ,Chemicals and petrochemicals emissions intensity,CO2 emissions in chemical sector per added value,tCO2 / thsd. USD2012 (MER),"For value added and for most countries World Bank data (World Bank, 2019) was used. The fraction of chemicals of total GVA of the manufacturing was multiplied by the total GVA of the manufacturing sector, which was obtained by combining the share of manufacturing in GDP (World Bank, 2019) with the total GDP (World Bank, 2019) (in MER terms). 
+
+As process emissions from the chemical sector are significant, we only included countries for which both process and energy emission data were available. This is the case for Annex 1 countries only and data were derived from the UNFCCC (UNFCCC, 2019), where we used data on category 1AA2C. Other direct emissions were drawn from the 2018 IEA Balances (IEA, 2018). 
+We calculated scope 2 emissions by multiplying total electricity consumption in chemical and petrochemical sector from IEA energy balances (IEA, 2018) with national average CO2 emission factors of electricity generation from IEA CO2 emissions data (IEA, 2018). ","World Bank, World Development Indicators (2017). Available at: https://databank.worldbank.org/source/world-development-indicators#
+IEA, World Energy Balances (2018). Available at: https://www.iea.org/statistics/balances/
+
+"
+Industry: Steel,Steel activity,Amount of steel produced per capita,t product / cap,"Historical data on steel production were taken from the World Steel Association (2018). Aggregated steel production from EU countries was collected from Eufer(2017, 2018 and 2019). National population data were obtained from the UN (2019). The intencity was obtained by divding production data by population data. ","Worldsteel. (2016). Crude steel production, 1980-1999. Available at: https://www.worldsteel.org/en/dam/jcr:3e275c73-6f11-4e7f-a5d8-23d9bc5c508f/Steel+Statistical+Yearbook+2017.pdf
+
+Worldsteel. (2018). Crude steel production, 2000-2018. Available at: https://www.worldsteel.org/internet-2017/steel-by-topic/statistics/steel-data-viewer/P1_crude_steel_total/CHN/IND
+
+Eufer, European Steel in Figures (2017; 2018; 2019). Available at: http://www.eurofer.org/News&Events/PublicationsLinksList/201705-SteelFigures.pdf
+
+UNFCCC, GHG emissions data (2019). Available at: https://di.unfccc.int/flex_annex1
+
+IEA. (2018a). Based on IEA data on World Energy Statistics and Balances 2016 © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+IEA. (2018b). Based on IEA data on CO2 From Fuel Combustion © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+"
+Industry: Steel,Steel emissions intensity,CO2 emissions per unit steel produced,kg CO2 / t product,"Historical data on steel production were taken from the World Steel Association (2016 & 2018). For Aggreagted steel production from EU countries, data was collected from Eufer (2017; 2018; 2019). Both scope 1 and scope 2 (emissions related to electricity consumption) emissions are included. For Annex 1 countries, scope 1 emissions, both energy-related and process emissions, were derived from the UNFCCC (UNFCCC, 2015), where we used data on category 1AA2A and 2C1. In case UNFCCC data were not available, IEA data (IEA, 2016a) were used to calculate  energy-related emissions. Direct emissions related to energy consumption were taken from IEA CO2 emissions data (IEA, 2016b). For all countries scope 2 emissions was calculated by multiplying total electricity consumption in the iron and steel sector, from IEA energy balances (IEA, 2016a) with national average CO2 emission factors of electricity generation from IEA CO2 emissions data (IEA, 2016b).","Worldsteel. (2016). Crude steel production, 1980-1999. Available at: https://www.worldsteel.org/en/dam/jcr:3e275c73-6f11-4e7f-a5d8-23d9bc5c508f/Steel+Statistical+Yearbook+2017.pdf
+
+Worldsteel. (2018). Crude steel production, 2000-2018. Available at: https://www.worldsteel.org/internet-2017/steel-by-topic/statistics/steel-data-viewer/P1_crude_steel_total/CHN/IND
+
+Eufer, European Steel in Figures (2017; 2018; 2019). Available at: http://www.eurofer.org/News&Events/PublicationsLinksList/201705-SteelFigures.pdf
+
+UNFCCC, GHG emissions data (2019). Available at: https://di.unfccc.int/flex_annex1
+
+IEA. (2018a). Based on IEA data on World Energy Statistics and Balances 2016 © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+IEA. (2018b). Based on IEA data on CO2 From Fuel Combustion © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+"
+Industry: Total,Industry emissions intensity,Energy-related CO2 emissions per GVA,tCO2 / thsd. USD2012 (PPP),"For Industry GVA data from the World Bank's World Development Indicator Database was used (World Bank, 2019). We multiplied industry GVA as a percentage of total GDP) by total GDP (in PPP terms).
+Scope 1 and 2 CO2 emissions from industry were drawn from the IEA World Energy Statistics and Balances; CO2 Emissions from Fuel Combustion (IEA, 2018). The emissionsintensity was obtiained by dividing the final emissions by the GVA. ","IEA. (2018). Based on IEA data on World Energy Statistics and Balances 2018 © OECD/IEA[2018]; as modified by the Climate Action Tracker. Available at:  https://www.iea.org/statistics/co2emissions/
+
+World Bank. World Development Indicators (2019). Available at: https://databank.worldbank.org/reports.aspx?source=world-development-indicators# "
+Industry: Total,Industry emissions intensity MER,Energy-related CO2 emissions per GVA,tCO2 / thsd. USD2012 (MER),"For Industry GVA data from the World Bank's World Development Indicator Database was used (World Bank, 2019). We multiplied industry GVA as a percentage of total GDP) by total GDP (in MER terms).
+Scope 1 and 2 CO2 emissions from industry were drawn from the IEA World Energy Statistics and Balances; CO2 Emissions from Fuel Combustion (IEA, 2018). The emissionsintensity was obtiained by dividing the final emissions by the GVA. ","IEA. (2018). Based on IEA data on World Energy Statistics and Balances 2018 © OECD/IEA[2018]; as modified by the Climate Action Tracker. Available at:  https://www.iea.org/statistics/co2emissions/
+
+World Bank. World Development Indicators (2019). Available at: https://databank.worldbank.org/reports.aspx?source=world-development-indicators# "
+Macro,Emissions per capita,GHG emissions per capita,tCO2e / cap,"For historical GHG emissions, we have used data from the National Communications (United Nations Framework Convention on Climate Change (UNFCCC), 2018) from each country, if available. The population data refer to UN population prospects (United Nations, 2019) using projection with medium fertility rates.   At the global level we use data from the PRIMAP model (PIK 2018), excl. LULUCF (using GWP from the SAR).","United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision, Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/
+
+UNFCCC. (2018). Greenhouse Gas Inventory Data. Greenhouse Gas Inventory Data. Retrieved from http://unfccc.int/di/DetailedByParty.do"
+Macro,Primary energy demand per capita,Primary energy demand per capita,GJ (primary) / cap,"The population data refer to UN population prospects (United Nations, 2019) using projection with medium fertility rates. Energy data refer to the International Energy Agency (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision, Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Macro,Final energy demand per capita,Final energy demand per capita,GJ (final) / cap,"The population data refer to UN population prospects (United Nations, 2019) using projection with medium fertility rates. Energy data refer to the International Energy Agency (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Macro,GDP per capita,GDP per capita,thousand USD2012 (PPP) / cap,"The population data refer to UN population prospects (United Nations, 2019) using projection with medium fertility rates. The historical GDP PPP data refer to World Development Indicators (The World Bank, 2019).","Blanco G., R. Gerlagh, S. Suh, J. Barrett, H.C. de Coninck, C.F. Diaz Morejon, R. Mathur, N. Nakicenovic, A. Ofosu Ahenkora, J. Pan, H. Pathak, J. Rice, R. Richels, S.J. Smith, D.I. Stern, F.L. Toth, and P. Zhou, 2014: Drivers, Trends and Mitigation. In: Climate Change 2014: Mitigation of Climate Change. Contribution of Working Group III to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change [Edenhofer, O., R. Pichs-Madruga, Y. Sokona, E. Farahani, S. Kadner, K. Seyboth, A. Adler, I. Baum, S. Brunner, P. Eickemeier, B. Kriemann, J. Savolainen, S. Schlömer, C. von Stechow, T. Zwickel and J.C. Minx (eds.)]. Cambridge University Press, Cambridge, United Kingdom and New York, NY, USA.
+
+The World Bank. (2019). World Development Indicators. Retrieved from http://databank.worldbank.org/data/views/reports/tableview.aspx
+
+United Nations, Department of Economic and Social Affairs, Population Division (2015). World Population Prospects: The 2015 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Macro,Emissions intensity of GDP,GHG emissions per GDP,tCO2e / thsd. USD2012 (PPP),"The historical GDP PPP  data refer to World Development Indicators (The World Bank, 2019). For historical GHG emissions, we have used data from the National Communications (United Nations Framework Convention on Climate Change (UNFCCC), 2015) from each country, if available.","The World Bank. (2019). World Development Indicators. Retrieved from http://databank.worldbank.org/data/views/reports/tableview.aspx
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/
+
+
+UNFCCC. (2015). Greenhouse Gas Inventory Data. Greenhouse Gas Inventory Data. Retrieved from http://unfccc.int/di/DetailedByParty.do"
+Macro,Primary energy intensity of GDP,Primary energy demand per GDP,TJ (primary) / mln. USD2012 (PPP),"The historical GDP PPP data refer to World Development Indicators (The World Bank, 2019). Energy data refer to the International Energy Agency (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+The World Bank. (2019). World Development Indicators. Retrieved from http://databank.worldbank.org/data/views/reports/tableview.aspx
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Macro,Final energy intensity of GDP,Final energy demand per GDP,TJ (final) / mln. USD2012 (PPP),"The historical GDP PPP data refer to World Development Indicators (The World Bank, 2018). Energy data refer to the International Energy Agency (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker.
+
+The World Bank. (2019). World Development Indicators. Retrieved from http://databank.worldbank.org/data/views/reports/tableview.aspx
+
+United Nations, Department of Economic and Social Affairs, Population Division (2019). World Population Prospects: The 2019 Revision. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Macro,Emissions intensity of energy,Energy-related CO2 emissions per unit primary energy demand,tCO2 / TJ (primary),"Total CO2 emissions related to the primary energy supply (obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Fossil fuel share,Fossil fuels in primary energy demand,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2019 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Nuclear share,Nuclear share of primary energy consumption,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Oil share,Oil share of primary energy consumption,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Coal share,Coal share of primary energy consumption,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Gas share,Gas share of primary energy consumption,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Hydro share,Hydro share of primary energy consumption,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Solar & Wind share,Solar & Wind share of primary energy consumption,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Macro,Nuclear share,Nuclear share of primary energy consumption,%,"Data on coal in primary energy supply (total, and coal, expressed as the sum of coal, coal products, peat and peat products taken together) were obtained from IEA data (IEA, 2019).","IEA. (2019). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2019], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Oil and Gas,Oil and Gas emissions intensity,GHG emissions per unit of oil and gas produced,tCO2e / ktoe,"This is calculated as the sum of fugitive emissions from oil and gas (EDGAR), emissions from gas flaring (NOAA) and other emissions from the oil and gas industries’ own use 3 (IEA) over domestic production of crude oil and natural gas.","IEA. (2016). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker. 
+
+EDGAR database, available on http://edgar.jrc.ec.europa.eu/background.php
+
+NOAA, satellite data available via http://www.ngdc.noaa.gov/dmsp/interest/gas_flares.html"
+Oil and Gas,Oil and Gas activity,Oil and Gas Production,Mtoe,"This number was obtained from IEA Energy Balances data (IEA, 2016).","IEA. (2016). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker. "
+Transport: Aviation,Aviation biofuel intensity,Biofuels and electrification in aviation,% biofuels/elec.,"All historical data on fuel use in transport have been based on IEA data (IEA, 2016).","IEA. (2016). Based on IEA data from Energy Statistics and Balances 2016 © OECD/IEA[2016], www.iea.org/statistics, Licence: www.iea.org/t&c; as modified by the Climate Action Tracker."
+Transport: Aviation,Aviation activity,Passenger flux per capita,pkm / cap,"All historical data on transport activity have been taken from ICCT 2014 Transport Roadmap Energy Model if available, and from the ICAO 2013, 2014 and 2015 Annual Reports where not, while population data are from UN World Population Prospects.","ICAO. (2014). Annual Report 2013 - Appendix 1. Available on http://www.icao.int/annual-report-2013/Documents/Appendix_1_en.pdfICAO. (2015). Annual Report 2014 - Appendix 1. Available on http://www.icao.int/annual-report-2014/Documents/Appendix_1_en.pdfICAO. (2016). Annual Report 2015 - Appendix 1. Available on http://www.icao.int/annual-report-2015/Documents/Appendix_1_en.pdfICCT. (2014). Transport Roadmap Energy Model.United Nations, Department of Economic and Social Affairs, Population Division (2015). World Population Prospects: The 2015 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/"
+Transport: Road,Modal split,Modal split,% private cars and motorcycles,"The modal split was obtained by calculating the fractions of the activity of each category. All historical data on transport activity have been taken from ICCT 2014 Transport Roadmap Energy Model, apart from country-level data within the EU, which were taken from the TREMOVE model version 4.2. Data update on 30 July 2019, data extracted from UNECE (https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__40-TRTRANS__02-TRROAD/04_en_TRRoadPassgKm_r.px/table/tableViewLayout1/) and ITF-OECD (https://stats.ITF-OECD.org/Index.aspx?DataSetCode=ITF_INV-MTN_DATA). Data from 2014 was updated with data from ITF-OECD (2019). ","ITF-OECD, Key Transport Statistics 2018 Data (2019). Available at: https://www.itf-oecd.org/sites/default/files/docs/key-transport-statistics-2019_0.pdf
+
+ICCT. (2017). Global Transportation Roadmap Model.
+TREMOVE 4.2, Transport & Mobility, University of Leuven, http://www.tmleuven.be/methode/tremove/home.htm. UNECE (https://w3.unece.org/PXWeb2015/pxweb/en/STAT/STAT__40-TRTRANS__02-TRROAD/04_en_TRRoadPassgKm_r.px/). ITF-OECD (https://stats.ITF-OECD.org/Index.aspx?DataSetCode=ITF_INV-MTN_DATA)"
+Transport: Road,Road transport emissions intensity,CO2 emission per vehicle kilometre,kg CO2 / vkm,"Road transport emissions intensity was calculated by dividing the activity with the emissions data. Activity and emissions data between 2016-2017 was extracted from ITF-OECD and UNFCC respectively, for the following countries: USA, Japan, Australia, France, Italy and the UK. All historical data until 2014 on transport emissions have been taken from ICCT 2014 Transport Roadmap Energy Model, apart from country-level data within the EU, which were taken from the TREMOVE model version 4.2. ","ITF-OECD, (2019). Available at: https://www.itf-oecd.org/sites/default/files/docs/key-transport-statistics-2019_0.pdf
+
+UNFCCC, GHG emissions (2019). Available at: https://di.unfccc.int/detailed_data_by_party
+
+ICCT. (2017). Global Transportation Roadmap Model.
+TREMOVE 4.2, Transport & Mobility, University of Leuven, http://www.tmleuven.be/methode/tremove/home.htm; UNFCCC, 2019 (https://di.unfccc.int/detailed_data_by_party); ITF-OECD, 2019 (https://www.itf-oecd.org/sites/default/files/docs/key-transport-statistics-2019_0.pdf)"
+Transport: Road,Road transport biofuel/electrification,Biofuels and electrification in road transport,% biofuels/elec.,Biofuel and electricity energy consumption in the road transport sector was summed and divided by total final consumption in the road transport sectotr. All data eas collected from IEA (2018). ,"IEA, World Energy Balances (2018). Available at: https://www.iea.org/statistics/balances/"
+Transport: Road,EVs per capita,Amount of EVs per 1000 capita,EVs / 1000 cap,"The EV per capita intensity was obtained from divinding the national EV stock by national population data. Data on EV stock was obtained from the IEA Global EV Outlook (IEA 2016; 2017; 2018; 2019). This indicator contains clues on the success of a country's EV supporting environment (and to a lesser extent, as well as on the fact that generally, the wealthier a country's population, the higher the amount of vehicles per capita). ","IEA, World EV Outlook (2019). Available at: https://www.iea.org/publications/reports/globalevoutlook2019/
+
+IEA, World EV Outlook (2018). Available at: https://www.iea.org/gevo2018/
+
+IEA, World EV Outlook (2017). Available at: https://www.iea.org/publications/freepublications/publication/GlobalEVOutlook2017.pdf
+
+IEA, Global EV Outlook: Beyond One Million Electric Cars (2016). Available on https://www.iea.org/publications/freepublications/publication/Global_EV_Outlook_2016.pdf
+
+United Nations, Department of Economic and Social Affairs, Population Division; World Population Prospects: The 2019 Revision (2019). Available at: https://population.un.org/wpp/Download/Standard/Population/"
+Transport: Road,EV chargers per million capita ,Amount of public EV chargers per million capita,EV chargers / M cap,"EV chargers per capita intensity was obtained by dividing the amount of publicly available EV chargers in a country (IEA, 2019) by the national population (UN, 2019). ","IEA, World EV Outlook (2019). Available at: https://www.iea.org/publications/reports/globalevoutlook2019/
+
+United Nations, Department of Economic and Social Affairs, Population Division; World Population Prospects: The 2019 Revision (2019). Available at: https://population.un.org/wpp/Download/Standard/Population/"
+Transport: Road,EV market share,% of total market,%,The EV market share data was collected from IEA (2019). ,"IEA, World EV Outlook (2019). Available at: https://www.iea.org/publications/reports/globalevoutlook2019/
+
+
+"
+Transport: Road,New EV sales,"Amount of new EV sales, aggregated per country",New EV sales,New EV sales data was collected from IEA (2019).,"IEA, World EV Outlook (2019). Available at: https://www.iea.org/publications/reports/globalevoutlook2019/
+
+ "
+Transport: Road,New EV sales per million capita,Amount of new EV sales per million capita,sales / M cap,"EV sales per capita intensity was calculated by dividing the amount of new EV sales in a country (IEA, 2019) by the national population (UN, 2019). ","IEA, World EV Outlook (2019). Available at: https://www.iea.org/publications/reports/globalevoutlook2019/
+
+United Nations, Department of Economic and Social Affairs, Population Division; World Population Prospects: The 2019 Revision (2019). Available at: https://population.un.org/wpp/Download/Standard/Population/"
+Waste,Waste activity,Amount of waste per capita,t waste / cap,"The total amount generated of municipal waste was obtained on country level from (OECD, 2015) and from the Waste Atlas for an estimation of the global number. Population data are from UN World Population Prospects.","OECD. (2015). OECD Environment Statistics - Municipal waste. Retrieved May 18, 2015, from http://www.oecd-ilibrary.org/environment/data/oecd-environment-statistics/municipal-waste_data-00601-en
+
+United Nations, Department of Economic and Social Affairs, Population Division (2015). World Population Prospects: The 2015 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/
+
+Waste Atlas. Global Waste Clock. Link: http://www.atlas.d-waste.com/"
+Waste,Waste emissions intensity,Methane emissions per unit of waste,tCH4 from landfill / t waste,"For total amount generated of municipal waste: (OECD, 2015); for CH4 emission from solid waste: (JRC/PBL, 2012; UNFCCC, 2015); for worldwide waste generation, estimation from Waste Atlas.","JRC/PBL. (2012). Edgar Version 4.2 FT2010. Retrieved from http://edgar.jrc.ec.europa.eu/index.phpOECD. (2015). OECD Environment Statistics - Municipal waste. Retrieved May 18, 2015, from http://www.oecd-ilibrary.org/environment/data/oecd-environment-statistics/municipal-waste_data-00601-enUNFCCC. (2015). Greenhouse Gas Inventory Data. Greenhouse Gas Inventory Data. Retrieved from http://unfccc.int/di/DetailedByParty.doUnited Nations, Department of Economic and Social Affairs, Population Division (2015). World Population Prospects: The 2015 Revision, DVD Edition. Medium Fertility Variant. Link: https://esa.un.org/unpd/wpp/Download/Standard/Population/Waste Atlas. Global Waste Clock. Link: http://www.atlas.d-waste.com/"

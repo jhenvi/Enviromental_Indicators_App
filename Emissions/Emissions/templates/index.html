@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Welcome!</title>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- D3 -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!-- Leaflet JS & CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" 
+  integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="crossorigin=""></script>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Climate Change is Real</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto flex-nowrap">
+                <li class="nav-item active">
+                    <span><a class="nav-link active" href="#">Home</a></span>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Navigate
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="/"> Home </a>
+                          <a class="dropdown-item" href="/country">Results by Country</a>
+                          <a class="dropdown-item" href="/temperature">Global Temperature Tracker</a>
+                          <a class="dropdown-item" href="/policy_projections">G20 Policy Commitments</a>
+                          <a class="dropdown-item" href="/stats">Country Data</a>
+                          <a class="dropdown-item" href="/insights">Related Videos</a>
+                          <a class="dropdown-item" href="/articles">Current Articles</a>
+                        </div>
+                    </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="/data">Data</a>
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+            <div class="hero-image"></div>
+<div class="container">
+  <div class="row">
+  <div class="col-md-12"> 
+  <h1>How Are We Doing Globally?</h1>
+  <iframe width="960" height="415" src="https://www.youtube.com/embed/uSMJwkkPQtk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p> See Stats page for more graphical information</p>
+</div>
+  <div class="row">
+    <div class="col-md-12">
+      <!-- <div class="panel panel-primary"> -->
+        <!-- <div class="panel-body"> -->
+            <div class="container">
+                <div class="jumbotron">
+                  <section class= "posts">
+                    <article class="post">
+                      <!-- <button>Hide Text</button> -->
+                      <h3>The Paris Agreement (French: Le Accord de Paris)</h3>
+                      <p class="this">The Paris Agreement (French: Le Accord de Paris) is an agreement within the United Nations Framework Convention on Climate Change (UNFCCC), dealing 
+                      with greenhouse-gas-emissions mitigation, adaptation, and finance, signed in 2016. The agreement's language was negotiated by representatives of 196 state 
+                      parties at the 21st Conference of the Parties of the UNFCCC in Le Bourget, near Paris, France, and adopted by consensus on 12 December 2015. As of February 2020, 
+                      all UNFCCC members have signed the agreement, 189 have become party to it, and the only significant emitters which are not parties are Iran and Turkey.
+                      The Paris Agreement's long-term temperature goal is to keep the increase in global average temperature to well below 2 °C above pre-industrial levels; 
+                      and to pursue efforts to limit the increase to 1.5 °C, recognizing that this would substantially reduce the risks and impacts of climate change. This should be done by peaking emissions as soon as possible, in order to "achieve a balance between anthropogenic emissions by sources and removals by sinks of greenhouse gases" in the second half of the 21st century. It also aims to increase the ability of parties to adapt to the adverse 
+                      impacts of climate change, and make "finance flows consistent with a pathway towards low greenhouse gas emissions and climate-resilient development."
+                      Under the Paris Agreement, each country must determine, plan, and regularly report on the contribution that it undertakes to mitigate global warming. 
+                      No mechanism forces a country to set a specific emissions target by a specific date,[8] but each target should go beyond previously set targets. 
+                      In June 2017, U.S. President Donald Trump announced his intention to withdraw the United States from the agreement. Under the agreement, the earliest effective 
+                      date of withdrawal for the U.S. is November 2020, shortly before the end of President Trump's 2016 term. In practice, changes in United States policy that are 
+                      contrary to the Paris Agreement have already been put in place.</p>
+                      <h3>G20 Paris Agreement Tool & Analysis</h3>
+                      <p class="this">The focus of this tool is to report environmental indicators for the G20 countries and its respective policies, temperature changes due to environmental impact. The dashboard tracks the emissions trends of 13 economic sectors through data series of 41 indicators for the G20 countries.</p>
+                      <h3> Where are we? and Where do we want to go?.</h3>
+                     <p class="this">We are focusing on the G20 members as they account for 85 per cent of the world economy, 75 per cent of global trade, and two-thirds of the world's population, 
+                      including more than half of the world's poor. </p>
+                      <p class="this">The Group of Twenty, or the G20, is the premier forum for international economic cooperation. The G20 brings together the leaders of both developed and developing countries from every continent. ​
+
+                        Collectively, G20 members represent around 80% of the world’s economic output, two-thirds of global population and three-quarters of international trade. Throughout the year, representatives from G20 countries gather to discuss financial and socioeconomic issues.​</p>
+                      <p class="this">According to United Nations Environment Programme UNEP<link>, if we rely only on the current climate commitments of the Paris Agreement, temperatures 
+                      will likely rise to 3.2 °C this century. To limit global temperature, rise to 1.5 °C, emissions must be below 25 gigatons (Gt) by 2030. With current Nov 
+                      2019 commitments, emissions will be 56 Gt CO2e by 2030, twice the environmental target. To limit global temperature rise to 1.5 °C, the global annual emission 
+                      reduction needed is 7.6% emissions reduction every year between 2020 and 2030. The top four emitters (China, USA, EU27, and India) contribute to over 55% of the 
+                      total emissions over the last decade, excluding emissions from a land-use change such as deforestation. China's emissions grew 1.6% in 2018 to reach a high of 
+                      13.7 Gt of CO2 equivalent. The US emits 13% of global emissions, and emissions rose 2.5% in 2018. The EU emits 8.5% of global emissions have declined 1% per 
+                      year across the last decade. Emissions declined by 1.3% in 2018. India's 7% of global emissions grew by 5.5% in 2018. Emissions per capita are one of the 
+                      lowest within the G20.</p>
+                  </article>
+          </section>
+          </div>
+        </div>
+<div class="container">
+        <div class="col-md-12">
+          <table id="summary-table" class="table table-striped table-inverse">
+            <h3>G20 GDP</h3>
+            <thead>
+              <tr>
+                <th>Argentina </th>
+                <td>450 USD Billion GDP </td>
+                <th>Australia</th><td>1450 USD Billion GDP </td>
+                <th>Brazil</th><td>2020 USD Billion GDP </td>
+                <th>Canada</th><td>1740 USD Billion GDP </td>
+                <th>China</th><td>14200 USD Billion GDP </td>
+                </tr>
+              <tr>
+                <th>France</th><td>2890 USD Billion GDP </td>
+                <th>Germany</th><td>4040 USD Billion GDP </td>
+                <th>India</th><td>2800 USD Billion GDP </td>
+                <th>Indonesia</th><td>1126 USD Billion GDP </td>
+                <th>Italy</th><td>2030 USD Billion GDP </td>
+              </tr>
+              <tr>
+                <th>Japan</th><td>5110 USD Billion GDP </td>
+                <th>Republic of Korea</th><td>1690 USD Billion GDP </td>
+                <th>Mexico</th><td>1200 USD Billion GDP </td>
+                <th>Russia</th><td>1750 USD Billion GDP </td>
+                <th>Saudi Arabia</th><td>785 USD Billion GDP </td>
+              </tr>
+              <tr>
+                <th>South Africa</th><td>350 USD Billion GDP </td>
+                <th>Turkey</th><td>740 USD Billion GDP </td>
+                <th>United Kingdom</th><td>2910 USD Billion GDP </td>
+                <th>United States</th><td>21200 USD Billion GDP </td>
+                <th>European Union</th><td>14000 USD Billion GDP </td>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-12">
+        <table id="geolocation" class="table table-striped table-inverse">
+          <h3>Interactive Map</h3>
+          <thead>
+            <tr>
+            </tr>
+          </thead>
+        </table>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12"> 
+                <h2>How Are We Doing Globally?</h2>
+                <button id="populate">Populate my options </button>
+                    <div>
+                        <h3>Select a type of index - for example 'Emissions per capita'</h3>
+                        <p><select id="fieldworld"></select></p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <h3>Select the year</h3>
+                    <p><select id="year"></select></p>
+                </div>
+                <div class="newSlider" style="position: relative;">
+                  <div class="handle handle-0 " style="position: absolute; z-index: 1; left: 213.5px;">
+                  </div>
+                  </div>
+
+                <hr>
+                <button id="homebutton">Show </button>
+            </div>
+        </div>
+        <div>
+        <hr>
+        <button id= "showworldmap"> show World Map</button>
+        </div>
+
+        <div class="row"> 
+                <div id="map"></div> 
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">  
+                <h3>2020 World Emissions Visualization</h3>
+            </div>
+        </div>
+
+  <div id="scatter"></div>
+  <!-- <div id="bar"></div> -->
+
+</div>
+<div class="container">
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="container">
+        
+      <section class= "posts">
+       <article class="post">
+
+                <ul> 
+                <h6>References</h6>
+                <li><a href="https://en.wikipedia.org/wiki/Paris_Agreement"> Paris Agreement </a></li>
+                <li><a href="https://public.wmo.int/en"> World Bank Environmental Data </a></li>
+                <li><a href="https://climateactiontracker.org"> Climate Change Action Tracker</a></li>
+                <li><a href="https://climate.nasa.gov/"> Climate Nasa</a></li>
+         </article>
+       </section>
+       </div>
+    </div>
+  </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+        <footer class="page-footer font-small blue">
+          <div class="footer-copyright text-center py-3">© Data BootCamp Final Project:
+            <a> Climate Change Tracker</a>
+          </div>
+      </footer>
+    <script src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>  
+</body>
+
+</html>
