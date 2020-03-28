@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <title>Welcome!</title>
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -36,10 +36,11 @@
                           <a class="dropdown-item" href="/policy_projections">G20 Policy Commitments</a>
                           <a class="dropdown-item" href="/stats">Country Data</a>
                           <a class="dropdown-item" href="/insights">Related Videos</a>
+                          <a class="dropdown-item" href="/worldbankdata">World Bank Data</a>
                           <a class="dropdown-item" href="/articles">Current Articles</a>
                     </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="/data">Data</a>
+                    <a class="nav-link active" href="/source_data">Data</a>
                 </li>
             </ul>
         </div>
@@ -51,25 +52,51 @@
         <hr>
       </div>
       <hr> 
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <button id="populate">Populate my options </button>
+                    <h3>Select any G20 country to see most recent data</h3>
+                    <p><select id="country"></select></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          <div>
+          <h3>Select the year</h3>
+          <p><select id="year"></select></p>
+      </div>
+    </div>
+  </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button id="shownews"> Show </button>
+            </div>
+        </div>
+      </div>
       <div class="row">
         <p>These are the most recent articles in reference to Emissions News.</p>
       </div>
+      
         <div class="table-responsive-md">
         <div class="table table-bordered table-dark table-striped">
-          
-          <table border="1" id="article" class="dataframe">
+        
+          <table border="1" id="articles" class="dataframe">
             <thead>
               <tr style="text-align: right;">
-
+              </thead>
           </div>
 
         </div>
+
         <footer class="page-footer font-small blue">
           <div class="footer-copyright text-center py-3">© Data BootCamp Final Project:
             <a> Climate Change Tracker</a>
           </div>
       </footer>
-
+        <script src="{{ url_for('static', filename='js/articles.js') }}"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

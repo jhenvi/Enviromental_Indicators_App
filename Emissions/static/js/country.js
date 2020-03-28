@@ -77,14 +77,14 @@ function countryemissions(emission){
   trace1 ={
     x:historicemission[0].year,
     y:historicemission[0].value,
-    text:historicemission[0].value ,
+    // text:historicemission[0].value ,
     mode:"scatter",
     name:"Historic"
   } 
   trace2 ={
       x:projectedemission[0].year,
       y:projectedemission[0].value,
-      text:projectedemission[0].value ,
+      // text:projectedemission[0].value ,
       mode:"markers",
       name:"Projected",
   }

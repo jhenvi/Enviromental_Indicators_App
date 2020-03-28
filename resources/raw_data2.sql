@@ -1,12 +1,14 @@
-CREATE TABLE raw_data (
-	Sector VARCHAR(120),
-	Indicator VARCHAR(120),
-	Unit VARCHAR(120),
-	Country_code VARCHAR(120),
-	Country VARCHAR(120),
-	Year VARCHAR(120),
-	Variable VARCHAR(120),
-	Value VARCHAR(120)
+CREATE TABLE raw_data4 (
+	id  VARCHAR(120),
+	sector VARCHAR(120),
+	indicator VARCHAR(120),
+	unit VARCHAR(120),
+	country_code VARCHAR(120),
+	country VARCHAR(120),
+	year VARCHAR(120),
+	variable VARCHAR(120),
+	value VARCHAR(120),
+	scenario VARCHAR(120)
 );
 
 select * from raw_data
