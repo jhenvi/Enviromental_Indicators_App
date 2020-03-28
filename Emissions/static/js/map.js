@@ -13,25 +13,6 @@ var myMap = L.map("map", {
 
 // #-----------------------------------------------------------
 
-  // grabbing the Emissions type and year for the world map
-// d3.select("#homebutton").on("click",grabberhome)
-// function grabberhome(){
-//   var fieldInputWorld  = d3.selectAll("#fieldworld").property("value")
-//   var fieldYear  = d3.selectAll("#year").property("value")
-  
-//   var urlworldmap = "/api/emission/wholeworld/" + fieldYear + "/" + fieldInputWorld
-//   console.log(urlworldmap)
-//   d3.json(urlworldmap).then(function(response){
-//     console.log(response)
-//     worldmap(response)
-//   });
-// // grabbing the field for world graph
-//   var urlworldgraph = "/api/emission/World/" + fieldInputWorld
-//   console.log(urlworldgraph)
-//   d3.json(urlworldgraph).then(function(response) {
-//     worldemissions(response)
-//   })
-// }
 var urlworldmap = "/api/emission/wholeworld/2016/Emissions_per_capita"
 d3.json(urlworldmap).then(function(response){
     console.log(response)
@@ -62,13 +43,7 @@ d3.json(urlworldmap).then(function(response){
           // Adjust radius
 
           radius: countries[i].value * 15000
-        }).bindPopup("<h1>" + countries[i].country + "</h1> <hr> <h3>emissions: " + countries[i].value + " "+ countries[i].unit + "</h3>").addTo(myMap);
+        }).bindPopup("<h3>" + countries[i].country + "</h3> <hr> <h5>emissions: " + countries[i].value + " "+ countries[i].unit + "</h3>").addTo(myMap);
       }
 });
 
-
-
-
-  // Loop through the countries array and create one marker for each country object
-
-  

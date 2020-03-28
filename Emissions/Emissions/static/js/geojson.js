@@ -1,4 +1,0 @@
-// creating colored world map
-
-
-

@@ -77,7 +77,9 @@ p {
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+article {
+  display: block;
+}
 footer {
     background-color: rgb(19, 206, 206);
     max-height: 60px;
@@ -440,4 +442,28 @@ align-content: middle
 .video {
 
   align-items: middle
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.axisSteelBlue text{
+  fill: steelblue;
+}
+
+
+.toolTip {
+  position: absolute;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 #ffffff;
+  border: 1px solid #6F257F;
+  padding: 14px;
+  text-align: center;
+}
+
+.lineLegend {
 }
