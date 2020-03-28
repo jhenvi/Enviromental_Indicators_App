@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <title>Welcome!</title>
-    
+    <title>World Bank Data</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <!--<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <!--<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="{{ url_for('static', filename='js/d3-tip.js') }}"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -34,11 +39,12 @@
                             <a class="dropdown-item" href="/temp">Global Mean Temperature Increase</a>
                             <a class="dropdown-item" href="/policyproj">Policy Projections</a>
                             <a class="dropdown-item" href="/insights">Related Videos</a>
+                            <a class="dropdown-item" href="/worldbankdata">World Bank Data</a>
                             <a class="dropdown-item" href="/articles">Current Articles</a>
                         </div>
                       </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/data">Data</a>
+                    <a class="nav-link" href="/source_data">Data</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +54,7 @@
 
     <div class="container">
             <div class="row">
-              <h1> Temperatures </h1>
+              <h1> Environmental Indicators World Bank Data </h1>
 
               <hr>
               </div>
@@ -58,7 +64,7 @@
               <div class="row">
                   <div class="col-md-12" id="insights">
                   <div class= "iframe-container" -->
-                  
+                    <script src="{{ url_for('static', filename='js/main.js') }}" charset="utf-8"></script>
 
 
 

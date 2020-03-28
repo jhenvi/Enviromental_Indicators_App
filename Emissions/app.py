@@ -6,6 +6,7 @@ from flask import (
     jsonify,
     request,
     redirect)
+import json
   # for the webscrap in the articles page
 import requests
 from bs4 import BeautifulSoup as b
@@ -19,25 +20,19 @@ app = Flask(__name__, static_url_path='/static')
 #################################################
 # Database Setup
 #################################################
-
-
 #import psycopg2
-
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, inspect
-
 engine=create_engine('postgres://postgres:postgres@localhost:5432/CAT-Decarbonisation-Indicator')
 connection = engine.connect()
 inspector = inspect(engine)
 Base = automap_base()
 Base.prepare(engine, reflect=True)
-
 Emissions = Base.classes.raw_data4
 inspector.get_table_names()
 # bankdata = Base.classes.world_bank
-
-
+####################################
 
 countries_locations = {"Brazil": [-14.2350, -51.9253],
       "Germany": [51.1657, 10.4515],
@@ -92,14 +87,27 @@ def worlmap():
     return render_template("/worldmap.html")
 
 # create route that renders data.html template
+@app.route("/source_data")
+def data1():
+    return render_template("/source_data.html")
+
 @app.route("/data")
 def data():
-    return render_template("/data.html")
+    chart_data= {}
+    with app.open_resource('static\\data\\dataworldbank.csv') as world_bank_csv:
+
+        df = pd.read_csv(world_bank_csv)
+        chart_data = df.to_dict(orient='records')
+        chart_data = json.dumps(chart_data, indent=2)
+
+    return chart_data
+
+@app.route("/worldbankdata")
+def wordbankdata():
+    return render_template("/worldbankdata.html")
+
 @app.route("/articles")
 def articles():
-    #file = '..resources/policy_projections.csv'
-
-#read the csv and to convert to json
 
     return render_template("/articles.html")
 # create route that gets all the data
@@ -187,37 +195,8 @@ def worldgraph(grabindicator):
 
     return jsonify(emission_data)
 
-# for the World Map on the Home page
-# @app.route("/api/emission/wholeworld/<grabyear>/<grabindicator>")
-# def worldmap (grabyear,grabindicator):
-#     session = Session(engine)
-#     results = session.query(Emissions.indicator, Emissions.unit,Emissions.country,Emissions.year,Emissions.value).\
-#         filter(grabyear == Emissions.year).\
-#         filter(grabindicator == Emissions.indicator).all()
-#     indicator=[]
-#     unit=[]
-#     country=[]
-#     year=[]
-#     value=[]
-#     for i in results:
-#         indicator.append(i[0])
-#         unit.append(i[1])
-#         country.append(i[2])
-#         year.append(i[3])
-#         value.append(i[4])
+# ----------------------------------------------
 
-
-#     emission_data = [{
-#         "indicator": indicator,
-#         "unit": unit,
-#         "country": country,
-#         "year": year,
-#         "value": value
-#     }]
-
-#     return jsonify(emission_data)
-
-# new code
 
 @app.route("/api/emission/wholeworld/<grabyear>/<grabindicator>")
 def worldmap (grabyear,grabindicator):
@@ -242,7 +221,7 @@ def worldmap (grabyear,grabindicator):
         "year": results[0][3],
         "emissionData": emission_data
      }
-    
+
 
     return jsonify(emission_response)
 
@@ -253,42 +232,34 @@ def news (grabyear,grabcountry):
 
     Country = grabcountry
     Before = grabyear
-    url = f"https://www.google.co.in/search?q=+{Country}+co2+emissions+scholarly+articles+before:+{Before}"
+    # url = f"https://www.google.co.in/search?q=+{Country}+co2+emissions+scholarly+articles+before:+{Before}"
+    url = f"https://www.worldbank.org/en/search?q=global+warming+{Country}+{grabyear}&currentTab=1"
     print (url)
     response = requests.get(url)
 
     soup = b(response.text,"lxml")
+    titles=[]
+    links=[]
+    descriptions=[]
+    
+    titles_html = soup.find_all('h4', attrs = {'class': 'list-group-item-heading result-header'})
+    links_html = soup.find_all('p', attrs = {'class': 'list-group-item-text result-link'})
+    descriptions_html = soup.find_all('p', attrs = {'class': 'list-group-item-text result-description'})
+    # print(titles[0].text)
+    # print(links[0].text)
+    # print(descriptions[0].text)
 
-    articles=[]
-    r = soup.find_all('div', attrs = {'class': 'BNeawe vvjwJb AP7Wnd'})
-
-    for i in range(len(r)):
-        articles.append(r[i].text)
-
-    urls = soup.find_all('div', attrs = {'class': 'kCrYT'})
-    Links=[]
-    counter=1
-    for link in urls:
-        href = link.find('a')
-        try:
-            raw_website = href.get('href')
-            clean_web = raw_website[7:]
-            Links.append(clean_web)
-            if counter ==1: 
-                article_content_response =requests.get(clean_web)
-                article_soup=b(response.text,"lxml")
-                print(article_soup)
-            counter+=1
-
-        except:
-            continue
+    for i in range(len(titles_html)):
+        titles.append(titles_html[i].text)
+        links.append(links_html[i].text)
+        descriptions.append(descriptions_html[i].text)
     newsdata = [{
-        "articles": articles,
-        "links": Links,
-        # "summary": summaries
+        "articles": titles,
+        "links": links,
+        "descriptions": descriptions
     }]
     return jsonify(newsdata)
-    # return jsonify({"data":"hello"})
+
 
 # - - - - - - - - - - - - - #
 
