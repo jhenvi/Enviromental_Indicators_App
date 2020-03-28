@@ -8,7 +8,6 @@ function populate(){
       d3.select("#country").append("option").attr("value",(data[0].country[j])).text(data[0].country[j])
     }
   })
-  
 }
 
 // grabbing the country and field
@@ -25,10 +24,12 @@ function grabber(){
 
 function tablemaker(df){
   console.log(df[0].links[0])
+  var table = d3.select("table");
   for (i =0;i<(df[0].articles).length;i++){
-    var row = d3.select("tbody").append("tr")
+    var row = table.append("tr")
     row.append("td").text(i)
     row.append("td").text(df[0].articles[i])
     row.append("td").text(df[0].links[i])
+    row.append("td").text(df[0].descriptions[i])
   }
 }
