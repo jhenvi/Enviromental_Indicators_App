@@ -6,12 +6,13 @@ from flask import (
     jsonify,
     request,
     redirect)
-import json
-  # for the webscrap in the articles page
+
+# for the webscrap in the articles page
 import requests
 from bs4 import BeautifulSoup as b
 import pandas as pd
 import webbrowser
+import json
 #################################################
 # Flask Setup
 #################################################
@@ -55,7 +56,6 @@ countries_locations = {"Brazil": [-14.2350, -51.9253],
       "Turkey": [38.963745, 35.243322],
       "United_States":[37.09, -95.71]
       }
-
 #-----------------#
 # create route that renders index.html template
 @app.route("/")
@@ -85,12 +85,10 @@ def stats():
 @app.route("/worldmap")
 def worlmap():
     return render_template("/worldmap.html")
-
 # create route that renders data.html template
 @app.route("/source_data")
 def data1():
     return render_template("/source_data.html")
-
 @app.route("/data")
 def data():
     chart_data= {}
@@ -222,10 +220,9 @@ def worldmap (grabyear,grabindicator):
         "emissionData": emission_data
      }
 
-
     return jsonify(emission_response)
 
-
+#### for the articles page to webscrab worldbank articles
 
 @app.route("/api/news/<grabyear>/<grabcountry>")
 def news (grabyear,grabcountry):
