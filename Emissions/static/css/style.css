@@ -191,47 +191,11 @@ input {
   #table-area th:nth-child(6) {
   min-width: 70px;
 }
-  td:nth-child(1) { background: hsl(150, 50%, 95%); vertical-align: inherit}
-  td:nth-child(2) { background: hsl(160, 60%, 95%); vertical-align: inherit}
-  td:nth-child(3) { background: hsl(170, 70%, 95%); vertical-align: inherit}
-  td:nth-child(4) { background: hsl(180, 80%, 95%); vertical-align: inherit}
-  td:nth-child(5) { background: hsl(160, 90%, 95%); vertical-align: inherit}
-  td:nth-child(6) { background: hsl(200, 50%, 95%); vertical-align: inherit}
-  td:nth-child(7) { background: hsl(150, 60%, 95%); vertical-align: inherit}
-  td:nth-child(8) { background: hsl(160, 70%, 95%); vertical-align: inherit}
-  td:nth-child(9) { background: hsl(170, 80%, 95%); vertical-align: inherit}
-  td:nth-child(10) { background: hsl(160, 90%, 95%); vertical-align: inherit}
-  td:nth-child(11) { background: hsl(190, 50%, 95%); vertical-align: inherit}
-  td:nth-child(12) { background: hsl(200, 60%, 95%); vertical-align: inherit}
-  td:nth-child(13) { background: hsl(150, 70%, 95%); vertical-align: inherit}
-  td:nth-child(14) { background: hsl(160, 80%, 95%); vertical-align: inherit}
-  td:nth-child(15) { background: hsl(160, 90%, 95%); vertical-align: inherit}
-  td:nth-child(16) { background: hsl(180, 50%, 95%); vertical-align: inherit}
-  td:nth-child(17) { background: hsl(190, 60%, 95%); vertical-align: inherit}
-  td:nth-child(18) { background: hsl(200, 70%, 95%); vertical-align: inherit}
-  td:nth-child(19) { background: hsl(150, 80%, 95%); vertical-align: inherit}
-  td:nth-child(20) { background: hsl(160, 90%, 95%); vertical-align: inherit}
+  td:nth-child { background: hsl(150, 50%, 95%); vertical-align: inherit}
 
-  th:nth-child(1) { background: hsl(150, 50%, 50%); vertical-align: inherit}
-  th:nth-child(2) { background: hsl(160, 60%, 50%); vertical-align: inherit}
-  th:nth-child(3) { background: hsl(170, 70%, 50%); vertical-align: inherit}
-  th:nth-child(4) { background: hsl(180, 80%, 50%); vertical-align: inherit}
-  th:nth-child(5) { background: hsl(160, 90%, 50%); vertical-align: inherit}
-  th:nth-child(6) { background: hsl(200, 99%, 50%); vertical-align: inherit}
-  th:nth-child(7) { background: hsl(200, 99%, 50%); vertical-align: inherit}
-  th:nth-child(8) { background: hsl(160, 99%, 50%); vertical-align: inherit}
-  th:nth-child(9) { background: hsl(170, 99%, 50%); vertical-align: inherit}
-  th:nth-child(10) { background: hsl(160, 50%, 50%); vertical-align: inherit}
-  th:nth-child(11) { background: hsl(160, 60%, 50%); vertical-align: inherit}
-  th:nth-child(12) { background: hsl(170, 70%, 50%); vertical-align: inherit}
-  th:nth-child(13) { background: hsl(180, 80%, 50%); vertical-align: inherit}
-  th:nth-child(14) { background: hsl(190, 90%, 50%); vertical-align: inherit}
-  th:nth-child(15) { background: hsl(160, 99%, 50%); vertical-align: inherit}
-  th:nth-child(16) { background: hsl(200, 99%, 50%); vertical-align: inherit}
-  th:nth-child(17) { background: hsl(200, 99%, 50%); vertical-align: inherit}
-  th:nth-child(18) { background: hsl(200, 99%, 50%); vertical-align: inherit}
-  th:nth-child(19) { background: hsl(150, 50%, 50%); vertical-align: inherit}
-  th:nth-child(20) { background: hsl(160, 60%, 50%); vertical-align: inherit}
+
+  th:nth-child { background: hsl(150, 50%, 50%); vertical-align: inherit}
+
 
  .loader {
     margin-top: 50px;

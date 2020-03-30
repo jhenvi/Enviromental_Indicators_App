@@ -79,21 +79,16 @@
       <div class="row">
         <!-- <p>These tool allows you to search WorldBank article database in reference to global warming.</p> -->
       </div>
-      
-        <div class="table-responsive-md">
-        <div class="table table-bordered table-dark table-striped">
-          <thead>
-            <tr>Country</tr>
-            <tr>-Article Link-</tr>
-            <tr>-Article Preview</tr>
+    <div class="table-responsive-md">
+      <div class="table table-bordered table-dark table-striped">
+        <thead>
+        <table border="1" id="articles" class="dataframe">
+        <thead>
+        <tr style="text-align: right;">
+        </thead>
+      </div>
 
-          <table border="1" id="articles" class="dataframe">
-            <thead>
-              <tr style="text-align: right;">
-              </thead>
-          </div>
-
-        </div>
+    </div>
 
 
         <script src="{{ url_for('static', filename='js/articles.js') }}"></script>

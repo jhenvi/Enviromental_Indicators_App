@@ -27,7 +27,7 @@ function tablemaker(df){
   var table = d3.select("table");
   for (i =0;i<(df[0].articles).length;i++){
     var row = table.append("tr")
-    row.append("td").text(i)
+    // row.append("td").text(i)
     row.append("td").text(df[0].articles[i])
     row.append("td").text(df[0].links[i])
     row.append("td").text(df[0].descriptions[i])

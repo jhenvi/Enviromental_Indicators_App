@@ -18,18 +18,18 @@ d3.json("/data", function(d) {
     country : d.country,
     ind_name : d.ind_name,
     '2018' : +d["2018"],
-    '2016' : +d["2016"],
-    '2015' : +d["2015"],
+    // '2016' : +d["2016"],
+    // '2015' : +d["2015"],
     '2010' : +d["2010"],
-    '2005' : +d["2005"],
+    // '2005' : +d["2005"],
     '2000' : +d["2000"],
-    '1995' : +d["1995"],
+    // '1995' : +d["1995"],
     '1990' : +d["1990"],
-    '1985' : +d["1985"],
+    // '1985' : +d["1985"],
     '1980' : +d["1980"],
-    '1975' : +d["1975"],
+    // '1975' : +d["1975"],
     '1970' : +d["1970"],
-    '1965' : +d["1965"],
+    // '1965' : +d["1965"],
     '1960' : +d["1960"]
   };
 }).then(function(data) {
@@ -74,11 +74,18 @@ for (var i=0; i < keys.length; i++) {
               .style("left", d3.event.pageX - 50 + "px")
               .style("top", d3.event.pageY - 70 + "px")
               .style("display", "inline-block")
+              // .html("Country:" + (d.country) + "<br>" + "Indicator:" + (d.ind_name) + "<br>" + "2018:" + d['2018']
+              // + "<br>" + "2016:" + d['2016'] + "<br>" + "2015:" + d['2015'] + "<br>" + "2010:" + d['2010']
+              // + "<br>" + "2005:" + d['2005'] + "<br>" + "2000:" + d['2000'] + "<br>" + "1995:" + d['1995']
+              // + "<br>" + "1990:" + d['1990'] + "<br>" + "1985:" + d['1985'] + "<br>" + "1980:" + d['1980']
+              // + "<br>" + "1975:" + d['1975'] + "<br>" + "1970:" + d['1970'] + "<br>" + "1965:" + d['1965']
+              // + "<br>" + "1960:" + d['1960']);
               .html("Country:" + (d.country) + "<br>" + "Indicator:" + (d.ind_name) + "<br>" + "2018:" + d['2018']
-              + "<br>" + "2016:" + d['2016'] + "<br>" + "2015:" + d['2015'] + "<br>" + "2010:" + d['2010']
-              + "<br>" + "2005:" + d['2005'] + "<br>" + "2000:" + d['2000'] + "<br>" + "1995:" + d['1995']
-              + "<br>" + "1990:" + d['1990'] + "<br>" + "1985:" + d['1985'] + "<br>" + "1980:" + d['1980']
-              + "<br>" + "1975:" + d['1975'] + "<br>" + "1970:" + d['1970'] + "<br>" + "1965:" + d['1965']
+              + "<br>" + "2010:" + d['2010']
+              + "<br>" + "2000:" + d['2000']
+              + "<br>" + "1990:" + d['1990'] 
+              + "<br>" + "1980:" + d['1980']
+              + "<br>" + "1970:" + d['1970']
               + "<br>" + "1960:" + d['1960']);
         })
     		.on("mouseout", function(d){ tooltip.style("display", "none");});
@@ -112,10 +119,6 @@ lineLegend.append("rect")
 
 });
 // d3.tip
-// Copyright (c) 2013 Justin Palmer
-// ES6 / D3 v4 Adaption Copyright (c) 2016 Constantin Gavrilete
-// Removal of ES6 for D3 v4 Adaption Copyright (c) 2016 David Gotz
-//
 // Tooltips for d3.js SVG visualizations
 
 d3.functor = function functor(v) {
@@ -199,10 +202,6 @@ d3.tip = function() {
   }
 
   // Public: Proxy style calls to the d3 tip container.  Sets or gets a style value.
-  //
-  // n - name of the property
-  // v - value of the property
-  //
   // Returns tip or style property value
   tip.style = function(n, v) {
     // debugger;
@@ -230,8 +229,6 @@ d3.tip = function() {
     return tip
   }
 
-  // Public: Sets or gets the offset of the tip
-  //
   // v - Array of [x, y] offset
   //
   // Returns offset or
@@ -242,10 +239,6 @@ d3.tip = function() {
     return tip
   }
 
-  // Public: sets or gets the html value of the tooltip
-  //
-  // v - String value of the tip
-  //
   // Returns html value or tip
   tip.html = function(v) {
     if (!arguments.length) return html
@@ -254,8 +247,6 @@ d3.tip = function() {
     return tip
   }
 
-  // Public: destroys the tooltip and removes it from the DOM
-  //
   // Returns a tip
   tip.destroy = function() {
     if(node) {

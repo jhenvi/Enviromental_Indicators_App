@@ -97,8 +97,18 @@ def data():
         df = pd.read_csv(world_bank_csv)
         chart_data = df.to_dict(orient='records')
         chart_data = json.dumps(chart_data, indent=2)
-
     return chart_data
+
+@app.route("/datadash")
+def datadash():
+    chart_datadash= {}
+    with app.open_resource('static\\data\\dataworldbank.csv') as world_bank_csv:
+
+        df = pd.read_csv(world_bank_csv)
+        chart_datadash = df.to_dict(orient='records')
+        chart_datadash = json.dumps(chart_datadash, indent=2)
+
+    return chart_datadash
 
 @app.route("/worldbankdata")
 def wordbankdata():
@@ -229,7 +239,6 @@ def news (grabyear,grabcountry):
 
     Country = grabcountry
     Before = grabyear
-    # url = f"https://www.google.co.in/search?q=+{Country}+co2+emissions+scholarly+articles+before:+{Before}"
     url = f"https://www.worldbank.org/en/search?q=global+warming+{Country}+{grabyear}&currentTab=1"
     print (url)
     response = requests.get(url)
