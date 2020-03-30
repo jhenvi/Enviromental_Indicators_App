@@ -36,20 +36,19 @@
                         Navigate
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/"> Home </a>
-                            <a class="dropdown-item" href="/country">Results by Country</a>
-                            <a class="dropdown-item" href="/temperature">Global Mean Temperature Increase</a>
-                            <a class="dropdown-item" href="/policy_projections">Policy Projections</a>
-                            <a class="dropdown-item" href="/stats">Statistics </a>
-                            <a class="dropdown-item" href="/insights">Related Videos</a>
-                            <a class="dropdown-item" href="/worldbankdata">World Bank Data</a>
-                            <a class="dropdown-item" href="/articles">Current Articles</a>
-                        </div>
+                          <a class="dropdown-item" href="/"> Home </a>
+                          <a class="dropdown-item" href="/country">Results by Country</a>
+                          <a class="dropdown-item" href="/temperature">Global Temperature Tracker</a>
+                          <a class="dropdown-item" href="/stats">Country Data</a>
+                          <a class="dropdown-item" href="/worldbankdata">World Bank Data</a>
+                          <a class="dropdown-item" href="/articles">Current Articles</a>
+                          <a class="dropdown-item" href="/insights">Related Videos</a>
+                          <a class="dropdown-item" href="/policy_projections">Policy Commitments</a>
+                      </div>
                     </li>
-               <li class="nav-item">
+              <li class="nav-item">
                 <a class="nav-link" href="/source_data">Data</a>
-
-                </li>
+              </li>
                 </ul>
             </div>
     </nav>
@@ -62,21 +61,29 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/BL1ZsAlJKXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
-    <div class="hero-image"></div>
     <div class="container">
-      <h1>Global Temperature Facts</h1>
+      <h2>Global Temperature Facts</h2>
       <div class="row text-center">
       <div class="col-md-12">
-      <p>This graph illustrates the change in global surface temperature relative to 1880-2018 average temperatures.</p>
     </div>
+<!-- 
 
-    <div class="hero-image"></div>
     <div class="container">
       <div class="row text-center">
       <div class="col-md-12">
       <script src="{{ url_for('static', filename='js/temp.js') }}"></script>
+      <h5>This graph illustrates the change in global surface temperature relative to 1880-2018 temperatures.</h5>
     </div>
     </div>
+    </div> -->
+
+    <div class="container p-3 my-3 border container-fluid"style="background-color:aliceblue;">
+      <h2>Temperature Statistics </h2>
+        <picture>
+        <img src="../static/images/tableauMediantemp.png" width="800" height="500" >
+        <img src="../static/images/tableauMaxtempMap.png" width="800" height="500" >
+        <img src="../static/images/tableauMaxtemp.png" width="800" height="500" >
+      </picture>
     </div>
 
     </body>
