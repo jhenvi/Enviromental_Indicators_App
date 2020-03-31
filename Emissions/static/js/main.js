@@ -1,3 +1,8 @@
+
+//Code adapted from:
+// Copyright (c) 2013 Justin Palmer
+// ES6 / D3 v4 Adaption Copyright (c) 2016 Constantin Gavrilete
+// Removal of ES6 for D3 v4 Adaption Copyright (c) 2016 David Gotz
 var width = 1200,
     height = 600;
 
@@ -143,7 +148,7 @@ d3.tip = function() {
     document.body.appendChild(node)
   }
 
-  // Public - show the tooltip on the screen
+  // show the tooltip on the screen
   //
   // Returns a tip
   tip.show = function() {
@@ -173,7 +178,7 @@ d3.tip = function() {
     return tip
   }
 
-  // Public - hide the tooltip
+  // hide the tooltip
   //
   // Returns a tip
   tip.hide = function() {
@@ -184,7 +189,7 @@ d3.tip = function() {
     return tip
   }
 
-  // Public: Proxy attr calls to the d3 tip container.  Sets or gets attribute value.
+  // Proxy attr calls to the d3 tip container.  Sets or gets attribute value.
   //
   // n - name of the attribute
   // v - value of the attribute
@@ -201,7 +206,7 @@ d3.tip = function() {
     return tip
   }
 
-  // Public: Proxy style calls to the d3 tip container.  Sets or gets a style value.
+  // Proxy style calls to the d3 tip container.  Sets or gets a style value.
   // Returns tip or style property value
   tip.style = function(n, v) {
     // debugger;
