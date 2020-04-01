@@ -18,7 +18,7 @@ function worldemissions(emission){
       xaxis: { 
           title:"Year"
       },
-      yaxis: { 
+      yaxis: {
         title:`${emission[0].indicator[0]} in ${emission[0].unit[0]} `
     },
     }
@@ -148,7 +148,7 @@ function searchappend(){
     tableData1.forEach(addin)
 }
 
-
+//for policy table
 function addin(tablerows){
     var row = tbody.append("tr")
     row.append("td").text(tablerows.country)
@@ -158,12 +158,7 @@ function addin(tablerows){
     row.append("td").text(tablerows.unit)
     row.append("td").text(tablerows.reference)
 }
-// creating colored world map
 
-// var mapConfig = {
-//   center: [43.28, 72.23],
-//   zoom: 5
-// }
 
 // creating world emissions line chart
 
@@ -214,11 +209,7 @@ d3.select("#homebutton").on("click",grabberhome)
 function grabberhome(){
   var fieldInputWorld  = d3.selectAll("#fieldworld").property("value")
   var fieldYear  = d3.selectAll("#year").property("value")
-  // var urlworldmap = "/api/emission/wholeworld/" + fieldYear + "/" + fieldInputWorld
-  // console.log(urlworldmap)
-  // d3.json(urlworldmap).then(function(response){
-    
-  // });
+
 // grabbing the field for world graph
   var urlworldgraph = "/api/emission/World/" + fieldInputWorld
   console.log(urlworldgraph)
@@ -326,7 +317,7 @@ function searchappend(){
         var tableData1 = [];
         console.log("search doesn't match")
     }
-    //console.log(Object.values(tableData1.map(row=>row.dateTime)));
+
 
     tableData1.forEach(addin)
 }
