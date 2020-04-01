@@ -1,0 +1,1448 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20194.20.0221.0754                               -->
+<workbook source-build='2019.4.4 (20194.20.0221.0754)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <SheetIdentifierTracking ignorable='true' predowngraded='true' />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='gridline'>
+      <format attr='line-pattern-only' value='dotted' />
+    </style-rule>
+    <style-rule element='title'>
+      <format attr='color' value='#000000' />
+    </style-rule>
+    <style-rule element='story-title'>
+      <format attr='color' value='#000000' />
+    </style-rule>
+    <style-rule element='tooltip'>
+      <format attr='color' value='#ffffff' />
+      <format attr='font-weight' value='bold' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='dbtemp2' inline='true' name='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dbtemp2' name='textscan.0h0d5g81bprbrm1agwc1t0tp3v94'>
+            <connection class='textscan' directory='C:/Users/jhenv/Desktop/Final_Project/resources' filename='dbtemp2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0h0d5g81bprbrm1agwc1t0tp3v94' name='dbtemp2.csv' table='[dbtemp2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='real' name='Temperature' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='string' name='Month_Averegage' ordinal='3' />
+            <column datatype='string' name='Country' ordinal='4' />
+            <column datatype='string' name='CID' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dbtemp2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[dbtemp2.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature]</local-name>
+            <parent-name>[dbtemp2.csv]</parent-name>
+            <remote-alias>Temperature</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[dbtemp2.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month_Averegage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month_Averegage]</local-name>
+            <parent-name>[dbtemp2.csv]</parent-name>
+            <remote-alias>Month_Averegage</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[dbtemp2.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CID]</local-name>
+            <parent-name>[dbtemp2.csv]</parent-name>
+            <remote-alias>CID</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[avg:Temperature:qk]&quot;' value='Mean Temperature' />
+          <alias key='&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[stp:Temperature:qk]&quot;' value='Std. dev.' />
+        </aliases>
+      </column>
+      <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Month_Average' datatype='string' name='[Month_Averegage]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Year (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Year]' new-bin='true'>
+          <bin default-name='false' value='&quot;1901-10&quot;'>
+            <value>1901</value>
+            <value>1902</value>
+            <value>1903</value>
+            <value>1904</value>
+            <value>1905</value>
+            <value>1906</value>
+            <value>1907</value>
+            <value>1908</value>
+            <value>1909</value>
+            <value>1910</value>
+          </bin>
+          <bin default-name='false' value='&quot;1911-20&quot;'>
+            <value>1911</value>
+            <value>1912</value>
+            <value>1913</value>
+            <value>1914</value>
+            <value>1915</value>
+            <value>1916</value>
+            <value>1917</value>
+            <value>1918</value>
+            <value>1919</value>
+            <value>1920</value>
+          </bin>
+          <bin default-name='false' value='&quot;1921-30&quot;'>
+            <value>1921</value>
+            <value>1922</value>
+            <value>1923</value>
+            <value>1924</value>
+            <value>1925</value>
+            <value>1926</value>
+            <value>1927</value>
+            <value>1928</value>
+            <value>1929</value>
+            <value>1930</value>
+          </bin>
+          <bin default-name='false' value='&quot;1931-40&quot;'>
+            <value>1931</value>
+            <value>1932</value>
+            <value>1933</value>
+            <value>1934</value>
+            <value>1935</value>
+            <value>1936</value>
+            <value>1937</value>
+            <value>1938</value>
+            <value>1939</value>
+            <value>1940</value>
+          </bin>
+          <bin default-name='false' value='&quot;1941-50&quot;'>
+            <value>1941</value>
+            <value>1942</value>
+            <value>1943</value>
+            <value>1944</value>
+            <value>1945</value>
+            <value>1946</value>
+            <value>1947</value>
+            <value>1948</value>
+            <value>1949</value>
+            <value>1950</value>
+          </bin>
+          <bin default-name='false' value='&quot;1951-60&quot;'>
+            <value>1951</value>
+            <value>1952</value>
+            <value>1953</value>
+            <value>1954</value>
+            <value>1955</value>
+            <value>1956</value>
+            <value>1957</value>
+            <value>1958</value>
+            <value>1959</value>
+            <value>1960</value>
+          </bin>
+          <bin default-name='false' value='&quot;1961-70&quot;'>
+            <value>1961</value>
+            <value>1962</value>
+            <value>1963</value>
+            <value>1964</value>
+            <value>1965</value>
+            <value>1966</value>
+            <value>1967</value>
+            <value>1968</value>
+            <value>1969</value>
+            <value>1970</value>
+          </bin>
+          <bin default-name='false' value='&quot;1971-80&quot;'>
+            <value>1971</value>
+            <value>1972</value>
+            <value>1973</value>
+            <value>1974</value>
+            <value>1975</value>
+            <value>1976</value>
+            <value>1977</value>
+            <value>1978</value>
+            <value>1979</value>
+            <value>1980</value>
+          </bin>
+          <bin default-name='false' value='&quot;1981-90&quot;'>
+            <value>1981</value>
+            <value>1982</value>
+            <value>1983</value>
+            <value>1984</value>
+            <value>1985</value>
+            <value>1986</value>
+            <value>1987</value>
+            <value>1988</value>
+            <value>1989</value>
+            <value>1990</value>
+          </bin>
+          <bin default-name='false' value='&quot;1991-00&quot;'>
+            <value>1991</value>
+            <value>1992</value>
+            <value>1993</value>
+            <value>1994</value>
+            <value>1995</value>
+            <value>1996</value>
+            <value>1997</value>
+            <value>1998</value>
+            <value>1999</value>
+            <value>2000</value>
+          </bin>
+          <bin default-name='false' value='&quot;2001-10&quot;'>
+            <value>2001</value>
+            <value>2002</value>
+            <value>2003</value>
+            <value>2004</value>
+            <value>2005</value>
+            <value>2006</value>
+            <value>2007</value>
+            <value>2008</value>
+            <value>2009</value>
+            <value>2010</value>
+          </bin>
+          <bin default-name='false' value='&quot;2011-15&quot;'>
+            <value>2011</value>
+            <value>2012</value>
+            <value>2013</value>
+            <value>2014</value>
+            <value>2015</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column-instance column='[Temperature]' derivation='Avg' name='[avg:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='Max' name='[max:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='Median' name='[med:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='Min' name='[min:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Temperature]' derivation='StdevP' name='[stp:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='Sum' name='[sum:Temperature:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Temperature]' derivation='VarP' name='[vrp:Temperature:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.527708' measure-ordering='alphabetic' measure-percentage='0.472292' rowDisplayCount='1000' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[avg:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[min:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[stp:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[sum:Temperature:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[vrp:Temperature:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Year (group)]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;1981-90&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1901-10&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;1941-50&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;2016&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1991-00&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1951-60&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1911-20&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1961-70&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;2001-10&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;1971-80&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1921-30&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;2011-15&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1931-40&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Avg.Temp' />
+      <command command='tsc:brush'>
+        <param name='special-fields' value='date-time' />
+        <param name='target' value='Avg.Temp' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Median by Country' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Year (group)' />
+        <param name='target' value='Median by Country' />
+      </command>
+    </action>
+    <action caption='Highlight 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='MAX by Country' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Year (group)' />
+        <param name='target' value='MAX by Country' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg.Temp'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>G20 Countries Agregate Average Temperatures </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dbtemp2' name='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5'>
+            <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Avg' name='[avg:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='border-width' value='1' />
+            <format attr='border-style' value='dotted' />
+            <format attr='border-color' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-style' value='dotted' />
+            <format attr='border-color' data-class='total' value='#000000' />
+            <format attr='border-color' data-class='subtotal' value='#1b1b1b' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='dotted' />
+            <format attr='stroke-color' scope='rows' value='#1b1b1b' />
+            <format attr='stroke-color' scope='cols' value='#00557f' />
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[avg:Temperature:qk]</rows>
+        <cols>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{734259C5-70B0-4CB0-B907-75E299B06058}' />
+    </worksheet>
+    <worksheet name='MAX by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='false' fontalignment='1' fontname='Tableau Semibold'>G20 COUNTRIES HISTORIC MAXIMUM TEMPERATURE </run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='false' fontalignment='1' fontname='Tableau Semibold' fontsize='11'>1901-2016</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='false' fontalignment='1' fontname='Tableau Semibold' fontsize='11'>(Celsius)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dbtemp2' name='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5'>
+            <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Year]' new-bin='true'>
+                <bin default-name='false' value='&quot;1901-10&quot;'>
+                  <value>1901</value>
+                  <value>1902</value>
+                  <value>1903</value>
+                  <value>1904</value>
+                  <value>1905</value>
+                  <value>1906</value>
+                  <value>1907</value>
+                  <value>1908</value>
+                  <value>1909</value>
+                  <value>1910</value>
+                </bin>
+                <bin default-name='false' value='&quot;1911-20&quot;'>
+                  <value>1911</value>
+                  <value>1912</value>
+                  <value>1913</value>
+                  <value>1914</value>
+                  <value>1915</value>
+                  <value>1916</value>
+                  <value>1917</value>
+                  <value>1918</value>
+                  <value>1919</value>
+                  <value>1920</value>
+                </bin>
+                <bin default-name='false' value='&quot;1921-30&quot;'>
+                  <value>1921</value>
+                  <value>1922</value>
+                  <value>1923</value>
+                  <value>1924</value>
+                  <value>1925</value>
+                  <value>1926</value>
+                  <value>1927</value>
+                  <value>1928</value>
+                  <value>1929</value>
+                  <value>1930</value>
+                </bin>
+                <bin default-name='false' value='&quot;1931-40&quot;'>
+                  <value>1931</value>
+                  <value>1932</value>
+                  <value>1933</value>
+                  <value>1934</value>
+                  <value>1935</value>
+                  <value>1936</value>
+                  <value>1937</value>
+                  <value>1938</value>
+                  <value>1939</value>
+                  <value>1940</value>
+                </bin>
+                <bin default-name='false' value='&quot;1941-50&quot;'>
+                  <value>1941</value>
+                  <value>1942</value>
+                  <value>1943</value>
+                  <value>1944</value>
+                  <value>1945</value>
+                  <value>1946</value>
+                  <value>1947</value>
+                  <value>1948</value>
+                  <value>1949</value>
+                  <value>1950</value>
+                </bin>
+                <bin default-name='false' value='&quot;1951-60&quot;'>
+                  <value>1951</value>
+                  <value>1952</value>
+                  <value>1953</value>
+                  <value>1954</value>
+                  <value>1955</value>
+                  <value>1956</value>
+                  <value>1957</value>
+                  <value>1958</value>
+                  <value>1959</value>
+                  <value>1960</value>
+                </bin>
+                <bin default-name='false' value='&quot;1961-70&quot;'>
+                  <value>1961</value>
+                  <value>1962</value>
+                  <value>1963</value>
+                  <value>1964</value>
+                  <value>1965</value>
+                  <value>1966</value>
+                  <value>1967</value>
+                  <value>1968</value>
+                  <value>1969</value>
+                  <value>1970</value>
+                </bin>
+                <bin default-name='false' value='&quot;1971-80&quot;'>
+                  <value>1971</value>
+                  <value>1972</value>
+                  <value>1973</value>
+                  <value>1974</value>
+                  <value>1975</value>
+                  <value>1976</value>
+                  <value>1977</value>
+                  <value>1978</value>
+                  <value>1979</value>
+                  <value>1980</value>
+                </bin>
+                <bin default-name='false' value='&quot;1981-90&quot;'>
+                  <value>1981</value>
+                  <value>1982</value>
+                  <value>1983</value>
+                  <value>1984</value>
+                  <value>1985</value>
+                  <value>1986</value>
+                  <value>1987</value>
+                  <value>1988</value>
+                  <value>1989</value>
+                  <value>1990</value>
+                </bin>
+                <bin default-name='false' value='&quot;1991-00&quot;'>
+                  <value>1991</value>
+                  <value>1992</value>
+                  <value>1993</value>
+                  <value>1994</value>
+                  <value>1995</value>
+                  <value>1996</value>
+                  <value>1997</value>
+                  <value>1998</value>
+                  <value>1999</value>
+                  <value>2000</value>
+                </bin>
+                <bin default-name='false' value='&quot;2001-10&quot;'>
+                  <value>2001</value>
+                  <value>2002</value>
+                  <value>2003</value>
+                  <value>2004</value>
+                  <value>2005</value>
+                  <value>2006</value>
+                  <value>2007</value>
+                  <value>2008</value>
+                  <value>2009</value>
+                  <value>2010</value>
+                </bin>
+                <bin default-name='false' value='&quot;2011-15&quot;'>
+                  <value>2011</value>
+                  <value>2012</value>
+                  <value>2013</value>
+                  <value>2014</value>
+                  <value>2015</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Max' name='[max:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Min' name='[min:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]'>
+            <groupfilter from='&quot;1961-70&quot;' function='range' level='[Year (group)]' to='&quot;2016&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]' direction='DESC' />
+          <slices>
+            <column>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='tick-color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='total' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]' value='#000000' />
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00557f' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='3' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]' />
+              <text column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]</rows>
+        <cols>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Min. Temperature: </run>
+              <run bold='true'>&lt;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[min:Temperature:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.45'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;United Kingdom&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='-23.857162921348312'>
+                  <node-reference>
+                    <axis>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[min:Temperature:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{4F9AFF4E-38A1-40B8-B19E-E6437C8718C2}' />
+    </worksheet>
+    <worksheet name='Map Avg Temp'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>G20 COUNTRIES MAXIMUM AVERAGE TEMPERATURE</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>1901-2016</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dbtemp2' name='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5'>
+            <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Max' name='[max:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Temperature]' derivation='Sum' name='[sum:Temperature:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]'>
+            <groupfilter from='&quot;Argentina&quot;' function='range' level='[none:Country:nk]' to='&quot;United States&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]' field-type='quantitative' max='35709369.668897822' min='-1896892.4357436316' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]' field-type='quantitative' max='11021338.012600159' min='-9751645.8675910197' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]' num-steps='5' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='streets' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]' />
+              <lod column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' />
+              <lod column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[sum:Temperature:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-family' value='Tableau Bold' />
+                <format attr='font-size' value='12' />
+                <format attr='color' value='#f28e2b' />
+                <format attr='font-style' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]</rows>
+        <cols>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[sum:Temperature:qk]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>22.699999999999999</value>
+                <value>&quot;France&quot;</value>
+                <value>14920.300000000008</value>
+                <value>46.655999999999999</value>
+                <value>2.5430000000000001</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-25' y='-53' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[sum:Temperature:qk]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]</field>
+                  <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>16.199999999999999</value>
+                <value>&quot;Russia&quot;</value>
+                <value>-8679.3999999999724</value>
+                <value>64.736000000000004</value>
+                <value>104.062</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='38' y='-19' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{5F3217A2-08A0-49BE-8F45-81F538FF04A6}' />
+    </worksheet>
+    <worksheet name='Median by Country'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Semibold'>G20 COUNTRIES HISTORIC MEDIAN TEMPERATURE</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontname='Tableau Semibold'>1901-2016</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontname='Tableau Semibold' fontsize='11'>(Celsius)</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dbtemp2' name='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5'>
+            <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Year (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Year]' new-bin='true'>
+                <bin default-name='false' value='&quot;1901-10&quot;'>
+                  <value>1901</value>
+                  <value>1902</value>
+                  <value>1903</value>
+                  <value>1904</value>
+                  <value>1905</value>
+                  <value>1906</value>
+                  <value>1907</value>
+                  <value>1908</value>
+                  <value>1909</value>
+                  <value>1910</value>
+                </bin>
+                <bin default-name='false' value='&quot;1911-20&quot;'>
+                  <value>1911</value>
+                  <value>1912</value>
+                  <value>1913</value>
+                  <value>1914</value>
+                  <value>1915</value>
+                  <value>1916</value>
+                  <value>1917</value>
+                  <value>1918</value>
+                  <value>1919</value>
+                  <value>1920</value>
+                </bin>
+                <bin default-name='false' value='&quot;1921-30&quot;'>
+                  <value>1921</value>
+                  <value>1922</value>
+                  <value>1923</value>
+                  <value>1924</value>
+                  <value>1925</value>
+                  <value>1926</value>
+                  <value>1927</value>
+                  <value>1928</value>
+                  <value>1929</value>
+                  <value>1930</value>
+                </bin>
+                <bin default-name='false' value='&quot;1931-40&quot;'>
+                  <value>1931</value>
+                  <value>1932</value>
+                  <value>1933</value>
+                  <value>1934</value>
+                  <value>1935</value>
+                  <value>1936</value>
+                  <value>1937</value>
+                  <value>1938</value>
+                  <value>1939</value>
+                  <value>1940</value>
+                </bin>
+                <bin default-name='false' value='&quot;1941-50&quot;'>
+                  <value>1941</value>
+                  <value>1942</value>
+                  <value>1943</value>
+                  <value>1944</value>
+                  <value>1945</value>
+                  <value>1946</value>
+                  <value>1947</value>
+                  <value>1948</value>
+                  <value>1949</value>
+                  <value>1950</value>
+                </bin>
+                <bin default-name='false' value='&quot;1951-60&quot;'>
+                  <value>1951</value>
+                  <value>1952</value>
+                  <value>1953</value>
+                  <value>1954</value>
+                  <value>1955</value>
+                  <value>1956</value>
+                  <value>1957</value>
+                  <value>1958</value>
+                  <value>1959</value>
+                  <value>1960</value>
+                </bin>
+                <bin default-name='false' value='&quot;1961-70&quot;'>
+                  <value>1961</value>
+                  <value>1962</value>
+                  <value>1963</value>
+                  <value>1964</value>
+                  <value>1965</value>
+                  <value>1966</value>
+                  <value>1967</value>
+                  <value>1968</value>
+                  <value>1969</value>
+                  <value>1970</value>
+                </bin>
+                <bin default-name='false' value='&quot;1971-80&quot;'>
+                  <value>1971</value>
+                  <value>1972</value>
+                  <value>1973</value>
+                  <value>1974</value>
+                  <value>1975</value>
+                  <value>1976</value>
+                  <value>1977</value>
+                  <value>1978</value>
+                  <value>1979</value>
+                  <value>1980</value>
+                </bin>
+                <bin default-name='false' value='&quot;1981-90&quot;'>
+                  <value>1981</value>
+                  <value>1982</value>
+                  <value>1983</value>
+                  <value>1984</value>
+                  <value>1985</value>
+                  <value>1986</value>
+                  <value>1987</value>
+                  <value>1988</value>
+                  <value>1989</value>
+                  <value>1990</value>
+                </bin>
+                <bin default-name='false' value='&quot;1991-00&quot;'>
+                  <value>1991</value>
+                  <value>1992</value>
+                  <value>1993</value>
+                  <value>1994</value>
+                  <value>1995</value>
+                  <value>1996</value>
+                  <value>1997</value>
+                  <value>1998</value>
+                  <value>1999</value>
+                  <value>2000</value>
+                </bin>
+                <bin default-name='false' value='&quot;2001-10&quot;'>
+                  <value>2001</value>
+                  <value>2002</value>
+                  <value>2003</value>
+                  <value>2004</value>
+                  <value>2005</value>
+                  <value>2006</value>
+                  <value>2007</value>
+                  <value>2008</value>
+                  <value>2009</value>
+                  <value>2010</value>
+                </bin>
+                <bin default-name='false' value='&quot;2011-15&quot;'>
+                  <value>2011</value>
+                  <value>2012</value>
+                  <value>2013</value>
+                  <value>2014</value>
+                  <value>2015</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Median' name='[med:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Min' name='[min:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]'>
+            <groupfilter from='&quot;1961-70&quot;' function='range' level='[Year (group)]' to='&quot;2016&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <natural-sort column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]' direction='DESC' />
+          <slices>
+            <column>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#ffffff' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]' value='#000000' />
+            <format attr='color' data-class='total' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]' value='#000000' />
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='total' scope='rows' value='#00000000' />
+            <format attr='background-color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]' value='bold' />
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' value='#000000' />
+            <format attr='font-weight' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00557f' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='3' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='dotted' />
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+            <format attr='border-style' value='dotted' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='color' value='#000000' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]' value='Years'>
+              <formatted-text>
+                <run>Years</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]' />
+              <text column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[med:Temperature:qk]</rows>
+        <cols>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Min. Temperature: </run>
+              <run bold='true'>&lt;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[min:Temperature:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.45'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;United Kingdom&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='-23.857162921348312'>
+                  <node-reference>
+                    <axis>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[min:Temperature:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{231DEE43-5205-41AE-A51B-4631E3CA9422}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dbtemp2' name='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1mg6w6i0tylhg21f2tn3z0wpmvy5'>
+            <column aggregation='None' datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Temperature]' role='measure' type='quantitative' />
+            <column-instance column='[Temperature]' derivation='Avg' name='[avg:Temperature:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]' field-type='quantitative' max='41211527.690163791' min='-21482827.421739172' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]' field-type='quantitative' max='25471597.735659704' min='-10353749.644088324' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' />
+              <size column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[avg:Temperature:qk]' />
+              <tooltip column='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[avg:Temperature:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Country:&#9;</run>
+                <run>&lt;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]&gt;&#10;</run>
+                <run fontcolor='#787878'>Mean Temperature:&#9;</run>
+                <run>&lt;[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[avg:Temperature:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Latitude (generated)]</rows>
+        <cols>[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{1313D737-5D89-4E87-8386-6F786938B5B5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Avg.Temp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2EB8635E-0A2C-4D7E-BDED-EECDF4759ABF}' />
+    </window>
+    <window class='worksheet' name='Median by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{537DE4E5-D992-421E-BF60-20A7CF8C1E89}' />
+    </window>
+    <window class='worksheet' maximized='true' name='MAX by Country'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[Year (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{FAD07016-CA0F-46D7-A001-CEA11163FC7C}' />
+    </window>
+    <window class='worksheet' name='Map Avg Temp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='3' param='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[max:Temperature:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+        <map-scale-visibility value='0' />
+        <default-map-unit-selection mapunit='1' />
+      </viewpoint>
+      <simple-id uuid='{976497B6-0DA4-48F6-B988-A53872F7DF12}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[avg:Temperature:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1mg6w6i0tylhg21f2tn3z0wpmvy5].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D44AB9A9-FC63-406C-BCD7-8937F79F9234}' />
+    </window>
+  </windows>
+</workbook>
