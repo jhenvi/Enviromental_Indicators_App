@@ -127,8 +127,7 @@ var parseTime = d3.timeParse("%Y");
     .attr("text-anchor", "middle")
     .attr("font-size", "16px")
     .attr("fill", "blue")
-    .text("Lowess Smoothing");
-
+    .text("Exponential Smoothing");
 
 }).catch(function(error) {
   console.log(error);

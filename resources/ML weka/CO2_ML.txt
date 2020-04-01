@@ -1,0 +1,70 @@
+=== Run information ===
+
+Scheme:
+	LinearRegression -S 0 -R 1.0E-8 -num-decimal-places 4
+
+Lagged and derived variable options:
+	-F "CO2 emissions (kt)" -L 1 -M 12 -Z
+
+Relation:     Global
+Instances:    14
+Attributes:   7
+              Year
+              Agricultural land (sq. km)
+              CO2 emissions (kt)
+              Forest area (sq. km)
+              Population, total
+              Total greenhouse gas emissions (kt of CO2 equivalent)
+              Urban population
+
+Transformed training data:
+
+              CO2 emissions (kt)
+              Lag_CO2 emissions (kt)-1
+              Lag_CO2 emissions (kt)-2
+              Lag_CO2 emissions (kt)-3
+              Lag_CO2 emissions (kt)-4
+              Lag_CO2 emissions (kt)-5
+              Lag_CO2 emissions (kt)-6
+              Lag_CO2 emissions (kt)-7
+              Lag_CO2 emissions (kt)-8
+              Lag_CO2 emissions (kt)-9
+              Lag_CO2 emissions (kt)-10
+              Lag_CO2 emissions (kt)-11
+              Lag_CO2 emissions (kt)-12
+
+CO2 emissions (kt):
+
+Linear Regression Model
+
+CO2 emissions (kt) =
+
+      0.9897 * Lag_CO2 emissions (kt)-1 +
+1075841.1118
+
+=== Future predictions from end of training data ===
+inst#    CO2 emissions (kt) 
+1               10250378.49 
+2               10250378.49 
+3               14686997.95 
+4               15983274.87 
+5               17796972.91 
+6               17906302.66 
+7               19281574.38 
+8               21047149.87 
+9               22340742.79 
+10              25742086.98 
+11              28737241.24 
+12              28933289.88 
+13              30670747.64 
+14               32408205.4 
+15*           33149289.1243 
+16*           33882717.8967 
+17*           34608570.7884 
+18*           35326926.0537 
+19*           36037861.1385 
+20*           36741452.6889 
+21*           37437776.5591 
+22*           38126907.8201 
+23*           38808920.7672 
+24*           39483888.9282 
