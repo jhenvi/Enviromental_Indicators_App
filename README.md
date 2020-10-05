@@ -1,5 +1,5 @@
 ### Environmental Indicators
-![EnviroAppScreen1](Images/EnviroAppScreen1.png)
+![EnviroAppScreen1](https://github.com/jhenvi/Enviromental_Indicators_App/blob/master/Images/EnviroAppScreen1.PNG)
 
 <img src=“https://github.com/jhenvi/Enviromental_Indicators_App/blob/master/Images/EnviroAppScreen1.PNG”>
 
