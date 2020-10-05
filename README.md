@@ -1,5 +1,5 @@
 Environmental Indicators
-![mission_to_mars](Images/EnviroApp7.png)
+![Enviromental_Indicators_App](Images/EnviroApp7.png)
 Tool to monitor G20 members environmental indicators as they account for 85 per cent of the world economy, 
 75 per cent of global trade, and two-thirds of the world's population, including more than half of the world's poor.
 
